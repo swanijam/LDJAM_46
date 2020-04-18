@@ -5,7 +5,8 @@ using UnityEngine;
 public class FightOrbitController : MonoBehaviour
 {
     public Transform camera;
-    public Transform curTarget;
+    public Transform curTargetPlanet;
+    Planet planet;
     public float orbitRadius = 20f;
     public float orbitSoftWidth = 5f;
     public float orbitCorrectForce = 1f;
@@ -15,6 +16,10 @@ public class FightOrbitController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+    }
+    public void InitializeWithPlanet(Planet _planet) {
+        curTargetPlanet = _planet.transform;
+        planet = _planet;
     }
 
     public float accelPerSec = 5f;
@@ -26,11 +31,11 @@ public class FightOrbitController : MonoBehaviour
     {
         rb.velocity += camera.TransformDirection(GetInputTranslationDirection()) * accelPerSec;
         rb.velocity = rb.velocity.normalized * Mathf.Min(maxSpeed, rb.velocity.magnitude);
-        Debug.Log(Vector3.Distance(transform.position, curTarget.position));
-        if (Vector3.Distance(transform.position, curTarget.position) > orbitRadius + orbitSoftWidth) {
-            rb.velocity += orbitCorrectForce * (curTarget.position - transform.position) * Time.deltaTime;
-        } else if (Vector3.Distance(transform.position, curTarget.position) < orbitRadius - orbitSoftWidth) {
-            rb.velocity += -orbitCorrectForce * (curTarget.position - transform.position) * Time.deltaTime;
+        Debug.Log(Vector3.Distance(transform.position, curTargetPlanet.position));
+        if (Vector3.Distance(transform.position, curTargetPlanet.position) > orbitRadius + orbitSoftWidth) {
+            rb.velocity += orbitCorrectForce * (curTargetPlanet.position - transform.position) * Time.deltaTime;
+        } else if (Vector3.Distance(transform.position, curTargetPlanet.position) < orbitRadius - orbitSoftWidth) {
+            rb.velocity += -orbitCorrectForce * (curTargetPlanet.position - transform.position) * Time.deltaTime;
         }
 
         if (Input.GetMouseButtonDown(0)) {
@@ -61,6 +66,6 @@ public class FightOrbitController : MonoBehaviour
         {
             direction += Vector3.right;
         }
-        return direction;
+        return direction.normalized;
     }
 }

@@ -5,7 +5,7 @@ using Cinemachine;
 
 public class Planet : MonoBehaviour
 {
-    int health = 3;
+    public int health = 3;
     public CinemachineImpulseSource cinemachineImpulseSource;
     // Start is called before the first frame update
     void OnEnable()
@@ -41,6 +41,7 @@ public class Planet : MonoBehaviour
 
     public void TakeDamage() {
         health--;
+        if (health <= 0 && onHealthZero != null) onHealthZero();
         StopAllCoroutines();
         StartCoroutine(Flinch());
     }
@@ -74,4 +75,7 @@ public class Planet : MonoBehaviour
         }
         StartCoroutine(IdleSpin());
     }
+
+    public delegate void HealthReducedToZero();
+    public event HealthReducedToZero onHealthZero;
 }
