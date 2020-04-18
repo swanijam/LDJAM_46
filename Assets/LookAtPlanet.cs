@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlightController : MonoBehaviour
+public class LookAtPlanet : MonoBehaviour
 {
+    public Transform planet;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class FlightController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.LookAt(planet, Vector3.up);
     }
 }
