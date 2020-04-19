@@ -76,4 +76,14 @@ public class Planet : MonoBehaviour
 
     public delegate void HealthReducedToZero();
     public event HealthReducedToZero onHealthZero;
+
+    public LayerMask playerLayer;
+    private void OnTriggerEnter(Collider other)
+    {
+        if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
+            PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
+            pcc.BeginOrbitCombat(this);
+        }
+
+    }
 }

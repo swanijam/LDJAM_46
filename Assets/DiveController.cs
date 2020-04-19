@@ -5,12 +5,7 @@ using Cinemachine;
 
 public class DiveController : MonoBehaviour
 {
-    Planet curPlanet;
-    Transform curPlanetTarget;
-    Rigidbody rb;
-    // public Vector3 planetMaxSize = Vector3.one * 20f;
-    Vector3 planetiSize = Vector3.one;
-    Vector3 planetiOffset;
+    // public vars
     public LookAtPlanet looker;
     public float dvelocity;
     public Transform camera;
@@ -18,10 +13,21 @@ public class DiveController : MonoBehaviour
     public float maxDistance = 20f, minDistance = 7f;
     public AnimationCurve camEffectCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     public float fovMin, fovMax;
+    public float offsetTrackingRatio = .2f;
     public Vector2 shakeAmplitudeRange;
     public Vector2 shakeFreqRange;
     public CinemachineVirtualCamera diveCam;
-    // Start is called before the first frame update
+    
+    // state vars
+    Vector3 planetiSize = Vector3.one;
+    Vector3 planetiOffset;
+    Planet curPlanet;
+    Transform curPlanetTarget;
+    Rigidbody rb;
+    float descentVelocity = 0f;
+    float curDescentTime = 0f;
+    bool fullCharge = false;
+
     void OnEnable()
     {
         rb = GetComponent<Rigidbody>();
@@ -33,15 +39,14 @@ public class DiveController : MonoBehaviour
         planetiOffset = p.transform.position-transform.position;
         diveCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = shakeAmplitudeRange.x;
         diveCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = shakeFreqRange.x;
+
+        // reset all values
+        fullCharge = false;
+        descentVelocity = 0f;
+        curDescentTime = 0f;
+
     }
 
-    // Vector3 planetOffset (Transform p) {
-    //     return p.position
-    // }
-
-    float descentVelocity = 0f;
-    // Update is called once per frame
-    float curDescentTime = 0f;
     void Update()
     {
         if (!fullCharge && Input.GetMouseButton(0)) {
@@ -53,18 +58,7 @@ public class DiveController : MonoBehaviour
         }
 
     }
-    // public AnimationCurve descentProgressCurve;
-    // public AnimationCurve scaleProgressCurve;
-    // public void scaleAfterDescent2() {
-    //     float curProgress = Mathf.InverseLerp(0f, fullDescentTime, curDescentTime);
-    //     float descentLerp = descentProgressCurve.Evaluate(curProgress);
-    //     float scaleLerp = scaleProgressCurve.Evaluate(curProgress);
-    //     curPlanetTarget.localScale = Vector3.Lerp(planetiSize, planetMaxSize, scaleLerp);
-    //     // curPlanetTarget.position = Vector3.Lerp()
-    // }
 
-    bool fullCharge = false;
-    public float offsetTrackingRatio = .2f;
     public void scaleAfterDescent (float velocity) {
         Debug.Log("scaling");
         float iradius = curPlanetTarget.localScale.x/2f;
@@ -114,7 +108,7 @@ public class DiveController : MonoBehaviour
         transform.rotation = Quaternion.LookRotation(-Vector3.right, Vector3.up);
         looker.transform.localRotation = Quaternion.identity;
         rb.velocity = transform.forward * 25f;
-        rb.drag = .05f;
+        rb.drag = .08f;
         // burst to particles
         // send to planet eater
         // planet eater happy emote

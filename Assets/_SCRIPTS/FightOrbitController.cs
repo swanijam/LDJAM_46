@@ -13,6 +13,8 @@ public class FightOrbitController : MonoBehaviour
     public LookAtPlanet looker;
     public Spear SPEAR;
     Rigidbody rb;
+    [HideInInspector]
+    public bool inputEnabled;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,6 @@ public class FightOrbitController : MonoBehaviour
     public void InitializeWithPlanet(Planet _planet) {
         curTargetPlanet = _planet.transform;
         planet = _planet;
-        looker.enabled = true;
     }
 
     public float accelPerSec = 5f;
@@ -31,7 +32,7 @@ public class FightOrbitController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity += camera.TransformDirection(GetInputTranslationDirection()) * accelPerSec;
+        if (inputEnabled) rb.velocity += camera.TransformDirection(GetInputTranslationDirection()) * accelPerSec;
         rb.velocity = rb.velocity.normalized * Mathf.Min(maxSpeed, rb.velocity.magnitude);
         // Debug.Log(Vector3.Distance(transform.position, curTargetPlanet.position));
         if (Vector3.Distance(transform.position, curTargetPlanet.position) > orbitRadius + orbitSoftWidth) {

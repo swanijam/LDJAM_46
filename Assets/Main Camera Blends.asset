@@ -47,7 +47,18 @@ MonoBehaviour:
         m_PostInfinity: 0
         m_RotationOrder: 0
   - m_From: FarCam
-    m_To: FreeCam
+    m_To: CM FreeLook2
+    m_Blend:
+      m_Style: 1
+      m_Time: 2
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: CM FreeLook2
+    m_To: OrbitCam
     m_Blend:
       m_Style: 1
       m_Time: 2
