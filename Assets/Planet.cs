@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
-
 public class Planet : MonoBehaviour
 {
     public int health = 3;
-    public CinemachineImpulseSource cinemachineImpulseSource;
+    public Cinemachine.CinemachineImpulseSource cinemachineImpulseSource;
     // Start is called before the first frame update
     void OnEnable()
     {

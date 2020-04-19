@@ -1,32 +1,132 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class DiveController : MonoBehaviour
 {
     Planet curPlanet;
     Transform curPlanetTarget;
     Rigidbody rb;
+    // public Vector3 planetMaxSize = Vector3.one * 20f;
+    Vector3 planetiSize = Vector3.one;
+    Vector3 planetiOffset;
+    public LookAtPlanet looker;
+    public float dvelocity;
     public Transform camera;
+    public float fullDescentTime = 10f;
+    public float maxDistance = 20f, minDistance = 7f;
+    public AnimationCurve camEffectCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+    public float fovMin, fovMax;
+    public Vector2 shakeAmplitudeRange;
+    public Vector2 shakeFreqRange;
+    public CinemachineVirtualCamera diveCam;
     // Start is called before the first frame update
     void OnEnable()
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        rb.velocity += camera.TransformDirection(GetInputTranslationDirection()) * accelPerSec;
-        rb.velocity = rb.velocity.normalized * Mathf.Min(maxSpeed, rb.velocity.magnitude);
-    }
-
     public void InitializeWithPlanet(Planet p) {
         curPlanetTarget = p.transform;
+        planetiSize = p.transform.localScale;
+        planetiOffset = p.transform.position-transform.position;
+        diveCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = shakeAmplitudeRange.x;
+        diveCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = shakeFreqRange.x;
+    }
+
+    // Vector3 planetOffset (Transform p) {
+    //     return p.position
+    // }
+
+    float descentVelocity = 0f;
+    // Update is called once per frame
+    float curDescentTime = 0f;
+    void Update()
+    {
+        if (!fullCharge && Input.GetMouseButton(0)) {
+            rb.velocity += camera.TransformDirection(GetInputTranslationDirection()) * accelPerSec;
+            rb.velocity = rb.velocity.normalized * Mathf.Min(maxSpeed, rb.velocity.magnitude);
+            descentVelocity = dvelocity;
+            fullDescentTime += Time.deltaTime;
+            scaleAfterDescent(descentVelocity);
+        }
+
+    }
+    // public AnimationCurve descentProgressCurve;
+    // public AnimationCurve scaleProgressCurve;
+    // public void scaleAfterDescent2() {
+    //     float curProgress = Mathf.InverseLerp(0f, fullDescentTime, curDescentTime);
+    //     float descentLerp = descentProgressCurve.Evaluate(curProgress);
+    //     float scaleLerp = scaleProgressCurve.Evaluate(curProgress);
+    //     curPlanetTarget.localScale = Vector3.Lerp(planetiSize, planetMaxSize, scaleLerp);
+    //     // curPlanetTarget.position = Vector3.Lerp()
+    // }
+
+    bool fullCharge = false;
+    public float offsetTrackingRatio = .2f;
+    public void scaleAfterDescent (float velocity) {
+        Debug.Log("scaling");
+        float iradius = curPlanetTarget.localScale.x/2f;
+        Vector3 planetToPlayer = (transform.position-curPlanetTarget.position).normalized;
+        Vector3 surfacePosition = curPlanetTarget.position + planetToPlayer*iradius;
+        float newScale_Scale = 1f + velocity * Time.deltaTime;
+        float newScale_Offset = 1f + velocity * Time.deltaTime * offsetTrackingRatio;
+        curPlanetTarget.localScale *= newScale_Scale;
+        curPlanetTarget.position = surfacePosition + -planetToPlayer * iradius * (newScale_Offset);
+        // Debug.Log(Vector3.Distance(surfacePosition, transform.position));
+        float lerpVal = camEffectCurve.Evaluate(Mathf.InverseLerp(maxDistance, minDistance, Vector3.Distance(surfacePosition, transform.position)));
+        // Debug.Log(lerpVal +", "+ Vector3.Distance(surfacePosition, transform.position));
+        diveCam.m_Lens.FieldOfView = Mathf.Lerp(fovMax, fovMin, lerpVal);
+        diveCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = Mathf.Lerp(shakeAmplitudeRange.x, shakeAmplitudeRange.y, lerpVal);
+        diveCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = Mathf.Lerp(shakeFreqRange.x, shakeFreqRange.y, lerpVal);
+        if (lerpVal >= .96f)  {
+            fullCharge = true;
+            StartCoroutine(FinisherSequence());
+        }
+    }
+    [Header("FinisherSequence")]
+    public float blackTime = .8f;
+    public UnityEngine.Events.UnityEvent activateBlack;
+    public float drillTime = 5f;
+    public UnityEngine.Events.UnityEvent activateDrill;
+    public float whiteTime = 1f;
+    public UnityEngine.Events.UnityEvent activateWhite;
+    public float exitTime = 4f;
+    public UnityEngine.Events.UnityEvent activateExit;
+    public UnityEngine.Events.UnityEvent afterExit;
+    IEnumerator FinisherSequence() {
+        // cover screen with black
+        looker.enabled = false;
+        activateBlack.Invoke();
+        yield return new WaitForSeconds(blackTime);
+        // drill time
+        activateDrill.Invoke();
+        yield return new WaitForSeconds(drillTime);
+
+        // white time
+        activateWhite.Invoke();
+        yield return new WaitForSeconds(whiteTime);
+        // hard cut to distant camera,
+        activateExit.Invoke();
+        curPlanetTarget.transform.localScale = planetiSize;
+        transform.position = curPlanetTarget.transform.position;
+        transform.rotation = Quaternion.LookRotation(-Vector3.right, Vector3.up);
+        looker.transform.localRotation = Quaternion.identity;
+        rb.velocity = transform.forward * 25f;
+        rb.drag = .05f;
+        // burst to particles
+        // send to planet eater
+        // planet eater happy emote
+        yield return new WaitForSeconds(exitTime);
+        // return camera to player
+        afterExit.Invoke();
+        rb.drag = 5f;
     }
 
     public float accelPerSec = 5f;
     public float maxSpeed = 5f;
+    public float forwardScale = 10f;
     public float verticalScale = .5f;
     Vector3 GetInputTranslationDirection()
     {
@@ -47,10 +147,9 @@ public class DiveController : MonoBehaviour
         {
             direction += Vector3.right;
         }
-
-        if (Input.GetMouseButton(0)) {
-            direction += Vector3.forward;
-        }
+        // if (fullCharge && Input.GetMouseButton(0)) {
+        //     direction += Vector3.forward * forwardScale;
+        // }
         return direction.normalized;
     }
 }
