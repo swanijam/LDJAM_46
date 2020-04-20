@@ -4842,7 +4842,7 @@ Transform:
   m_GameObject: {fileID: 3532881192559947624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193928775338}
   m_RootOrder: 0
@@ -4888,7 +4888,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891810
 SkinnedMeshRenderer:
@@ -4993,7 +4993,7 @@ Transform:
   m_GameObject: {fileID: 3532881192612532273}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.045, y: 0.045, z: 0.045}
+  m_LocalScale: {x: 0.045, y: 0.035, z: 0.045}
   m_Children: []
   m_Father: {fileID: 3532881194485259636}
   m_RootOrder: 0
@@ -5039,7 +5039,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891793
 SkinnedMeshRenderer:
@@ -5175,7 +5175,7 @@ Transform:
   m_GameObject: {fileID: 3532881192703992858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193346673000}
   m_RootOrder: 0
@@ -5221,7 +5221,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891891
 SkinnedMeshRenderer:
@@ -5450,7 +5450,7 @@ Transform:
   m_GameObject: {fileID: 3532881192776666394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193595977722}
   m_RootOrder: 0
@@ -5496,7 +5496,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891785
 SkinnedMeshRenderer:
@@ -5632,7 +5632,7 @@ Transform:
   m_GameObject: {fileID: 3532881192811649032}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.045, y: 0.045, z: 0.045}
+  m_LocalScale: {x: 0.045, y: 0.035, z: 0.045}
   m_Children: []
   m_Father: {fileID: 3532881194139757716}
   m_RootOrder: 0
@@ -5678,7 +5678,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891903
 SkinnedMeshRenderer:
@@ -5783,7 +5783,7 @@ Transform:
   m_GameObject: {fileID: 3532881192823714138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881192693260059}
   m_RootOrder: 0
@@ -5829,7 +5829,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891901
 SkinnedMeshRenderer:
@@ -5965,7 +5965,7 @@ Transform:
   m_GameObject: {fileID: 3532881192851117605}
   m_LocalRotation: {x: 0, y: 0.3420201, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.06, y: 0.035, z: 0.06}
   m_Children: []
   m_Father: {fileID: 3532881193267705671}
   m_RootOrder: 0
@@ -6011,7 +6011,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891790
 SkinnedMeshRenderer:
@@ -6116,7 +6116,7 @@ Transform:
   m_GameObject: {fileID: 3532881192889327111}
   m_LocalRotation: {x: 0, y: 0.3420201, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.06, y: 0.035, z: 0.06}
   m_Children: []
   m_Father: {fileID: 3532881193627082692}
   m_RootOrder: 0
@@ -6162,7 +6162,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891783
 SkinnedMeshRenderer:
@@ -6329,7 +6329,7 @@ Transform:
   m_GameObject: {fileID: 3532881192936892899}
   m_LocalRotation: {x: 0, y: 0.3420201, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.06, y: 0.035, z: 0.06}
   m_Children: []
   m_Father: {fileID: 3532881194132712256}
   m_RootOrder: 0
@@ -6375,7 +6375,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891779
 SkinnedMeshRenderer:
@@ -6480,7 +6480,7 @@ Transform:
   m_GameObject: {fileID: 3532881192960484298}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.045, y: 0.045, z: 0.045}
+  m_LocalScale: {x: 0.045, y: 0.035, z: 0.045}
   m_Children: []
   m_Father: {fileID: 3532881193916225462}
   m_RootOrder: 0
@@ -6526,7 +6526,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891778
 SkinnedMeshRenderer:
@@ -6631,7 +6631,7 @@ Transform:
   m_GameObject: {fileID: 3532881192975153377}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193761810516}
   m_RootOrder: 0
@@ -6677,7 +6677,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891890
 SkinnedMeshRenderer:
@@ -6782,7 +6782,7 @@ Transform:
   m_GameObject: {fileID: 3532881193002309297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194455470668}
   m_RootOrder: 0
@@ -6828,7 +6828,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891805
 SkinnedMeshRenderer:
@@ -6964,7 +6964,7 @@ Transform:
   m_GameObject: {fileID: 3532881193038472214}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881192789551133}
   m_RootOrder: 0
@@ -7010,7 +7010,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891806
 SkinnedMeshRenderer:
@@ -7115,7 +7115,7 @@ Transform:
   m_GameObject: {fileID: 3532881193046292596}
   m_LocalRotation: {x: 0, y: 0.3420201, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.06, y: 0.035, z: 0.06}
   m_Children: []
   m_Father: {fileID: 3532881193690954946}
   m_RootOrder: 0
@@ -7161,7 +7161,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891889
 SkinnedMeshRenderer:
@@ -7297,7 +7297,7 @@ Transform:
   m_GameObject: {fileID: 3532881193083713537}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.045, y: 0.045, z: 0.045}
+  m_LocalScale: {x: 0.045, y: 0.035, z: 0.045}
   m_Children: []
   m_Father: {fileID: 3532881193018269991}
   m_RootOrder: 0
@@ -7343,7 +7343,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891776
 SkinnedMeshRenderer:
@@ -7448,7 +7448,7 @@ Transform:
   m_GameObject: {fileID: 3532881193096639667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881192728784880}
   m_RootOrder: 0
@@ -7494,7 +7494,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891791
 SkinnedMeshRenderer:
@@ -7661,7 +7661,7 @@ Transform:
   m_GameObject: {fileID: 3532881193147311497}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194513571553}
   m_RootOrder: 0
@@ -7707,7 +7707,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891902
 SkinnedMeshRenderer:
@@ -7812,7 +7812,7 @@ Transform:
   m_GameObject: {fileID: 3532881193163497090}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.045, y: 0.045, z: 0.045}
+  m_LocalScale: {x: 0.045, y: 0.035, z: 0.045}
   m_Children: []
   m_Father: {fileID: 3532881194517361091}
   m_RootOrder: 0
@@ -7858,7 +7858,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891795
 SkinnedMeshRenderer:
@@ -7975,6 +7975,7 @@ GameObject:
   - component: {fileID: 3532881193215667980}
   - component: {fileID: 3532881193215667983}
   - component: {fileID: 3532881193215667982}
+  - component: {fileID: 1262440136}
   m_Layer: 0
   m_Name: Fire Planet
   m_TagString: Untagged
@@ -8018,6 +8019,9 @@ MonoBehaviour:
   idleSpinSmoothTime: 2
   idleSpinMaxSpeed: 30
   curTargetIdleSpin: 30
+  ExplodeEffect: {fileID: 0}
+  body: {fileID: 0}
+  Heart: {fileID: 0}
   IdleSpinCurve:
     serializedVersion: 2
     m_Curve:
@@ -8086,6 +8090,25 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.3
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1262440136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3532881193215667981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230e6224baded8a49ab8e94ac6d1e3c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetGesture: {fileID: 2007221371115489836}
+  FireBreath: {fileID: 7060050653561818163}
+  fireBreathDuration: 5
+  hurtDuration: 0
+  planet: {fileID: 3532881193215667983}
+  IsBreathFirePeriodically: 0
+  IsBreathFire: 0
 --- !u!1 &3532881193256038949
 GameObject:
   m_ObjectHideFlags: 0
@@ -8116,7 +8139,7 @@ Transform:
   m_GameObject: {fileID: 3532881193256038949}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.045, y: 0.045, z: 0.045}
+  m_LocalScale: {x: 0.045, y: 0.035, z: 0.045}
   m_Children: []
   m_Father: {fileID: 3532881192713854737}
   m_RootOrder: 0
@@ -8162,7 +8185,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891807
 SkinnedMeshRenderer:
@@ -8628,7 +8651,7 @@ Transform:
   m_GameObject: {fileID: 3532881193337613816}
   m_LocalRotation: {x: 0, y: 0.3420201, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.06, y: 0.035, z: 0.06}
   m_Children: []
   m_Father: {fileID: 3532881193676767488}
   m_RootOrder: 0
@@ -8674,7 +8697,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891797
 SkinnedMeshRenderer:
@@ -8810,7 +8833,7 @@ Transform:
   m_GameObject: {fileID: 3532881193386912168}
   m_LocalRotation: {x: 0, y: 0.3420201, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.06, y: 0.035, z: 0.06}
   m_Children: []
   m_Father: {fileID: 3532881193658861338}
   m_RootOrder: 0
@@ -8856,7 +8879,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891803
 SkinnedMeshRenderer:
@@ -9118,7 +9141,7 @@ Transform:
   m_GameObject: {fileID: 3532881193449040133}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881192707790132}
   m_RootOrder: 0
@@ -9164,7 +9187,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891895
 SkinnedMeshRenderer:
@@ -9403,7 +9426,7 @@ Transform:
   m_GameObject: {fileID: 3532881193490155519}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193106574533}
   m_RootOrder: 0
@@ -9449,7 +9472,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891782
 SkinnedMeshRenderer:
@@ -9585,7 +9608,7 @@ Transform:
   m_GameObject: {fileID: 3532881193499344469}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.07, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193598186306}
   m_RootOrder: 0
@@ -9631,7 +9654,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891899
 SkinnedMeshRenderer:
@@ -9767,7 +9790,7 @@ Transform:
   m_GameObject: {fileID: 3532881193510342693}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.045, y: 0.07, z: 0.045}
+  m_LocalScale: {x: 0.045, y: 0.035, z: 0.045}
   m_Children: []
   m_Father: {fileID: 3532881193316920311}
   m_RootOrder: 0
@@ -9813,7 +9836,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891894
 SkinnedMeshRenderer:
@@ -9918,7 +9941,7 @@ Transform:
   m_GameObject: {fileID: 3532881193520725956}
   m_LocalRotation: {x: 0, y: 0.3420201, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.06, y: 0.035, z: 0.06}
   m_Children: []
   m_Father: {fileID: 3532881193060295841}
   m_RootOrder: 0
@@ -9964,7 +9987,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891786
 SkinnedMeshRenderer:
@@ -10100,7 +10123,7 @@ Transform:
   m_GameObject: {fileID: 3532881193556135769}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.045, y: 0.045, z: 0.045}
+  m_LocalScale: {x: 0.045, y: 0.035, z: 0.045}
   m_Children: []
   m_Father: {fileID: 3532881193320322959}
   m_RootOrder: 0
@@ -10146,7 +10169,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891801
 SkinnedMeshRenderer:
@@ -10251,7 +10274,7 @@ Transform:
   m_GameObject: {fileID: 3532881193571022530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194378632201}
   m_RootOrder: 0
@@ -10297,7 +10320,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891777
 SkinnedMeshRenderer:
@@ -10464,7 +10487,7 @@ Transform:
   m_GameObject: {fileID: 3532881193598593048}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193934817357}
   m_RootOrder: 0
@@ -10510,7 +10533,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891787
 SkinnedMeshRenderer:
@@ -10646,7 +10669,7 @@ Transform:
   m_GameObject: {fileID: 3532881193645845660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881192728751563}
   m_RootOrder: 0
@@ -10692,7 +10715,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891897
 SkinnedMeshRenderer:
@@ -10890,7 +10913,7 @@ Transform:
   m_GameObject: {fileID: 3532881193731650049}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193111403105}
   m_RootOrder: 0
@@ -10936,7 +10959,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891804
 SkinnedMeshRenderer:
@@ -11041,7 +11064,7 @@ Transform:
   m_GameObject: {fileID: 3532881193735263570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.07, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193398005148}
   m_RootOrder: 0
@@ -11087,7 +11110,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891792
 SkinnedMeshRenderer:
@@ -11223,7 +11246,7 @@ Transform:
   m_GameObject: {fileID: 3532881193769879257}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194456440983}
   m_RootOrder: 0
@@ -11269,7 +11292,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891789
 SkinnedMeshRenderer:
@@ -11405,7 +11428,7 @@ Transform:
   m_GameObject: {fileID: 3532881193832705902}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.07, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881192895151559}
   m_RootOrder: 0
@@ -11451,7 +11474,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891896
 SkinnedMeshRenderer:
@@ -11587,7 +11610,7 @@ Transform:
   m_GameObject: {fileID: 3532881193899712273}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194228104767}
   m_RootOrder: 0
@@ -11633,7 +11656,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891802
 SkinnedMeshRenderer:
@@ -11961,7 +11984,7 @@ Transform:
   m_GameObject: {fileID: 3532881194016343776}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.045, y: 0.045, z: 0.045}
+  m_LocalScale: {x: 0.045, y: 0.035, z: 0.045}
   m_Children: []
   m_Father: {fileID: 3532881194631264231}
   m_RootOrder: 0
@@ -12007,7 +12030,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891892
 SkinnedMeshRenderer:
@@ -12112,7 +12135,7 @@ Transform:
   m_GameObject: {fileID: 3532881194019422404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193799550126}
   m_RootOrder: 0
@@ -12158,7 +12181,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891780
 SkinnedMeshRenderer:
@@ -12263,7 +12286,7 @@ Transform:
   m_GameObject: {fileID: 3532881194031438041}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193496750762}
   m_RootOrder: 0
@@ -12309,7 +12332,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891888
 SkinnedMeshRenderer:
@@ -12476,7 +12499,7 @@ Transform:
   m_GameObject: {fileID: 3532881194150704560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881192905262553}
   m_RootOrder: 0
@@ -12522,7 +12545,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891800
 SkinnedMeshRenderer:
@@ -12689,7 +12712,7 @@ Transform:
   m_GameObject: {fileID: 3532881194212303150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194203987616}
   m_RootOrder: 0
@@ -12735,7 +12758,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891788
 SkinnedMeshRenderer:
@@ -17711,7 +17734,7 @@ Transform:
   m_GameObject: {fileID: 3532881194255567857}
   m_LocalRotation: {x: 0, y: 0.3420201, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.06, y: 0.035, z: 0.06}
   m_Children: []
   m_Father: {fileID: 3532881193505445835}
   m_RootOrder: 0
@@ -17757,7 +17780,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891893
 SkinnedMeshRenderer:
@@ -17893,7 +17916,7 @@ Transform:
   m_GameObject: {fileID: 3532881194281716460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194545358739}
   m_RootOrder: 0
@@ -17939,7 +17962,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891796
 SkinnedMeshRenderer:
@@ -18075,7 +18098,7 @@ Transform:
   m_GameObject: {fileID: 3532881194390090521}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.07, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194633151082}
   m_RootOrder: 0
@@ -18121,7 +18144,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891900
 SkinnedMeshRenderer:
@@ -18226,7 +18249,7 @@ Transform:
   m_GameObject: {fileID: 3532881194404415428}
   m_LocalRotation: {x: 0, y: 0.3420201, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalScale: {x: 0.04, y: 0.035, z: 0.04}
   m_Children: []
   m_Father: {fileID: 3532881193181274248}
   m_RootOrder: 0
@@ -18272,7 +18295,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891799
 SkinnedMeshRenderer:
@@ -18377,7 +18400,7 @@ Transform:
   m_GameObject: {fileID: 3532881194426315355}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194504067457}
   m_RootOrder: 0
@@ -18423,7 +18446,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891781
 SkinnedMeshRenderer:
@@ -18621,7 +18644,7 @@ Transform:
   m_GameObject: {fileID: 3532881194495535897}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.045, y: 0.045, z: 0.045}
+  m_LocalScale: {x: 0.045, y: 0.035, z: 0.045}
   m_Children: []
   m_Father: {fileID: 3532881193550356577}
   m_RootOrder: 0
@@ -18667,7 +18690,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891798
 SkinnedMeshRenderer:
@@ -18865,7 +18888,7 @@ Transform:
   m_GameObject: {fileID: 3532881194528122769}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194261854849}
   m_RootOrder: 0
@@ -18911,7 +18934,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891794
 SkinnedMeshRenderer:
@@ -19016,7 +19039,7 @@ Transform:
   m_GameObject: {fileID: 3532881194533268421}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881194197869424}
   m_RootOrder: 0
@@ -19062,7 +19085,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891898
 SkinnedMeshRenderer:
@@ -19198,7 +19221,7 @@ Transform:
   m_GameObject: {fileID: 3532881194622309834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.07, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881192849128982}
   m_RootOrder: 0
@@ -19244,7 +19267,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891784
 SkinnedMeshRenderer:
@@ -19349,7 +19372,7 @@ Transform:
   m_GameObject: {fileID: 3532881194622671557}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43399963, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.05, y: 0.035, z: 0.05}
   m_Children: []
   m_Father: {fileID: 3532881193875614167}
   m_RootOrder: 0
@@ -19395,7 +19418,7 @@ MonoBehaviour:
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
-  instatiateUpVector: 0
+  instatiateUpVector: 3
   projectileLifeTime: 6
 --- !u!137 &327221873561891885
 SkinnedMeshRenderer:
@@ -19727,17 +19750,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireBreath
       objectReference: {fileID: 0}
+    - target: {fileID: 8579668944580811730, guid: 9abe72d558e9be940ac19dd34263c21f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9abe72d558e9be940ac19dd34263c21f, type: 3}
---- !u!4 &7060050653561818318 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8579668944580811567, guid: 9abe72d558e9be940ac19dd34263c21f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1651499292728334305}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7060050653561818163 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8579668944580811730, guid: 9abe72d558e9be940ac19dd34263c21f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1651499292728334305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7060050653561818318 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8579668944580811567, guid: 9abe72d558e9be940ac19dd34263c21f,
     type: 3}
   m_PrefabInstance: {fileID: 1651499292728334305}
   m_PrefabAsset: {fileID: 0}
@@ -19756,7 +19784,27 @@ PrefabInstance:
     - target: {fileID: 6642409496420628123, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[5]
-      value: 100
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6642409496420628123, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6642409496420628123, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6642409496420628123, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6642409496420628123, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8194956077268676526, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d,
         type: 3}
@@ -19836,3 +19884,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3394575984412283504}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2007221371115489836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3801286492100106332, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3394575984412283504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7c158af7b77d348af0bd9aae535649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
