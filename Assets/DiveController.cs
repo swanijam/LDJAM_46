@@ -17,6 +17,7 @@ public class DiveController : MonoBehaviour
     public Vector2 shakeAmplitudeRange;
     public Vector2 shakeFreqRange;
     public CinemachineVirtualCamera diveCam;
+    public float ejectDrag = 1f;
     
     // state vars
     Vector3 planetiSize = Vector3.one;
@@ -108,7 +109,7 @@ public class DiveController : MonoBehaviour
         transform.rotation = Quaternion.LookRotation(-Vector3.right, Vector3.up);
         looker.transform.localRotation = Quaternion.identity;
         rb.velocity = transform.forward * 25f;
-        rb.drag = .08f;
+        rb.drag = ejectDrag;
         // burst to particles
         // send to planet eater
         // planet eater happy emote

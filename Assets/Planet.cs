@@ -5,31 +5,49 @@ public class Planet : MonoBehaviour
 {
     public int health = 3;
     public Cinemachine.CinemachineImpulseSource cinemachineImpulseSource;
+    public PeriodicallyLaunchObject[] plos;
     // Start is called before the first frame update
     void OnEnable()
     {
         StartCoroutine(IdleSpin());
+        plos = GetComponentsInChildren<PeriodicallyLaunchObject>();
+    }
+    public float  idleSpinSmoothTime = 2f, idleSpinMaxSpeed = 60f;
+    public float curTargetIdleSpin = 60f;
+    float idleSpinVelocity, curSpinSpeed;
+    IEnumerator IdleSpin() {
+        curSpinSpeed = 0f;
+        idleSpinVelocity = 0f;
+        while (true) {
+            curSpinSpeed = Mathf.SmoothDamp(curSpinSpeed, curTargetIdleSpin, ref idleSpinVelocity, idleSpinSmoothTime, 15f);
+            transform.rotation *= Quaternion.AngleAxis(curSpinSpeed * Time.deltaTime, transform.up);
+            yield return new WaitForEndOfFrame();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
+    public void StartCombat() {
+        StopAllCoroutines();
+        StartCoroutine(CombatSpin());
     }
 
     public AnimationCurve IdleSpinCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     public float IdleSpinTime = 5f;
-    IEnumerator IdleSpin() {
+    float combatSpinMod = 0f, combatSpinModVelocity = 0f;
+    IEnumerator CombatSpin() {
+        combatSpinMod = 0f;
+        combatSpinModVelocity = 0f;
+        SetLaunchersEnabled(true);
         while (true) { // this gets interupted by taking harm, other fight phases, etc.
-            float angle = Random.Range(15f, 90f);
+            float angle = Random.Range(30f, 90f);
             Quaternion irot = transform.rotation;
-            Quaternion targetOrientation = transform.rotation * Quaternion.AngleAxis(angle, new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)));
+            Quaternion targetOrientation = transform.rotation * Quaternion.AngleAxis(angle, (new Vector3(Random.Range(-1f, 1f), Random.Range(-.5f, .5f), Random.Range(-1f, 1f))));
             float currTime = 0f;
             float lerpVal;
             WaitForEndOfFrame wfeof = new WaitForEndOfFrame();
             float totalTime = angle/90f * IdleSpinTime;
             while (currTime < totalTime) {
-                currTime += Time.deltaTime;
+                combatSpinMod = Mathf.SmoothDamp(combatSpinMod, 1f, ref combatSpinModVelocity, .5f, 1f);
+                currTime += Time.deltaTime * combatSpinMod;
                 lerpVal = IdleSpinCurve.Evaluate(Mathf.InverseLerp(0f, totalTime, currTime));
                 transform.rotation = Quaternion.Lerp(irot, targetOrientation, lerpVal);
                 yield return wfeof;
@@ -39,9 +57,16 @@ public class Planet : MonoBehaviour
 
     public void TakeDamage() {
         health--;
+        SetLaunchersEnabled(false);
         if (health <= 0 && onHealthZero != null) onHealthZero();
         StopAllCoroutines();
         StartCoroutine(Flinch());
+    }
+
+    public void SetLaunchersEnabled(bool _enabled) {
+        foreach(PeriodicallyLaunchObject plo in plos) {
+            if (plo != null) plo.firing = _enabled;
+        }
     }
 
     public AnimationCurve FlinchCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
@@ -71,7 +96,7 @@ public class Planet : MonoBehaviour
             transform.rotation = Quaternion.Lerp(irot, targetOrientation, lerpVal);
             yield return wfeof;
         }
-        StartCoroutine(IdleSpin());
+        if (health > 0 ) StartCoroutine(CombatSpin());
     }
 
     public delegate void HealthReducedToZero();
@@ -84,6 +109,16 @@ public class Planet : MonoBehaviour
             PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
             pcc.BeginOrbitCombat(this);
         }
-
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
+            PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
+            SetLaunchersEnabled(false);
+            StopAllCoroutines();
+            curTargetIdleSpin = idleSpinMaxSpeed;
+            StartCoroutine(IdleSpin());
+        }
     }
 }
