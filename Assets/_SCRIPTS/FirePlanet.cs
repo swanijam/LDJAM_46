@@ -7,6 +7,7 @@ public class FirePlanet : MonoBehaviour
     public PlanetGesture planetGesture;
     public GameObject FireBreath;
     public float fireBreathDuration;
+    public float hurtDuration;
     public Planet planet;
     public bool IsBreathFirePeriodically = false;
     public bool IsBreathFire = false;
@@ -26,7 +27,7 @@ public class FirePlanet : MonoBehaviour
     public void HurtGesture()
     {
         StopFireBreath();
-        StartCoroutine(BreathFirePeriodicallyAnimation());
+        StartCoroutine(HurtGestureAnimation());
     }
 
 
@@ -34,6 +35,8 @@ public class FirePlanet : MonoBehaviour
     // {
     //     StartCoroutine(BreathFireAnimation());
     // }
+
+
     public void StopFireBreath()
     {
         IsBreathFirePeriodically = false;
@@ -45,7 +48,8 @@ public class FirePlanet : MonoBehaviour
     {
         planetGesture.SetFace(PlanetGesture.FaceState.HURT);
         yield return new WaitForSeconds(planetGesture.duration);
-
+        yield return new WaitForSeconds(hurtDuration);
+        BreathFirePeriodically();
     }
 
     public IEnumerator BreathFirePeriodicallyAnimation()
