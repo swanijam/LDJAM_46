@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlanetEyebrows
+  m_Name: IceSpike
   m_Shader: {fileID: 4800000, guid: 9c6ece3d5ef8bb84db19471daaf6c788, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -75,8 +75,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _LightSmoothness: 0.1
-    - _LightThreshold: 0.01
+    - _LightSmoothness: 0.054
+    - _LightThreshold: 0.168
     - _LightingEnabled: 0
     - _MKEditorShowDetailBehavior: 0
     - _MKEditorShowDissolveBehavior: 0
@@ -100,21 +100,21 @@ Material:
     - _RimSize: 3
     - _RimSmoothness: 0.5
     - _RimThreshold: 0.1
-    - _ShadowIntensity: 1
-    - _Shininess: 0.41
+    - _ShadowIntensity: 0.77
+    - _Shininess: 0.25
     - _SmoothnessTextureChannel: 0
     - _SoftParticlesEnabled: 0
     - _SoftParticlesFarFadeDistance: 1
     - _SoftParticlesNearFadeDistance: 0
     - _SpecularHighlights: 1
-    - _SpecularIntensity: 0.5
+    - _SpecularIntensity: 0.426
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
     - _AmbientColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.8941177, g: 0.18431373, b: 0.20392159, a: 1}
+    - _Color: {r: 0.7960785, g: 0.96470594, b: 1, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
