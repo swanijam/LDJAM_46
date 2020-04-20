@@ -10,8 +10,11 @@ public class PeriodicallyLaunchObject : MonoBehaviour
     public float launchSpeed = 20f;
     public bool firing = false;
     public Planet parentPlanet;
+    public Animator animator;
+    public float instatiateUpVector;
     private void OnEnable()
     {
+        animator = GetComponent<Animator>();
         StartCoroutine(LaunchLoop());
     }
     IEnumerator LaunchLoop() {
@@ -21,7 +24,9 @@ public class PeriodicallyLaunchObject : MonoBehaviour
                 yield return new WaitForSeconds(interval);
                 continue;
             }
-            GameObject go = Instantiate(projectile, transform.position, Quaternion.LookRotation(transform.TransformDirection(localLaunchVector), Vector3.up), null);
+            animator.SetTrigger("Spit");
+            yield return new WaitForSeconds(0.67f);
+            GameObject go = Instantiate(projectile, transform.position+transform.up*instatiateUpVector, Quaternion.LookRotation(transform.TransformDirection(localLaunchVector), Vector3.up), null);
             go.GetComponent<Projectile>().parentPlanet = parentPlanet;
             go.transform.localScale = projectile.transform.localScale;
             go.SetActive(true);
