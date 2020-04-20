@@ -17,6 +17,7 @@ public class Planet : MonoBehaviour
             }
         }
     }
+        
     public float  idleSpinSmoothTime = 2f, idleSpinMaxSpeed = 60f;
     public float curTargetIdleSpin = 60f;
     float idleSpinVelocity, curSpinSpeed;
@@ -74,6 +75,9 @@ public class Planet : MonoBehaviour
         }
     }
 
+    public delegate void OnHurtPlanet();
+    public event OnHurtPlanet onHurtPlanet;
+
     public void TakeDamage() {
         health--;
         SetLaunchersEnabled(false);
@@ -121,10 +125,14 @@ public class Planet : MonoBehaviour
     public delegate void HealthReducedToZero();
     public event HealthReducedToZero onHealthZero;
 
+    public delegate void EnterPlanet();
+    public event EnterPlanet enterPlanet;
+
     public LayerMask playerLayer;
     private void OnTriggerEnter(Collider other)
     {
         if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
+            enterPlanet();
             PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
             if (pcc == null) Debug.LogError("not a player", other.gameObject);
             pcc.BeginOrbitCombat(this);
