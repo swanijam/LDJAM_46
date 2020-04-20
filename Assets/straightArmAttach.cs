@@ -5,19 +5,19 @@ using UnityEngine;
 public class straightArmAttach : MonoBehaviour
 {
     public Transform shoulder;
-    public Quaternion iShoulderRot;
-    public Quaternion iShoulderRelative;
-    public Vector3 iHandPos;
+     Quaternion iShoulderRot;
+     Quaternion iShoulderRelative;
+     Vector3 iHandPos;
     public Transform hand;
     public Transform grabTarget;
     public Transform elbow;
-    public Vector3 iElbowPos;
+     Vector3 iElbowPos;
     private void Awake()
     {
         iShoulderRot = shoulder.localRotation;
         iShoulderRelative = Quaternion.FromToRotation(hand.position-shoulder.position, shoulder.forward);
         iHandPos = hand.localPosition;
-        iElbowPos = hand.localPosition;
+        if (elbow != null) iElbowPos = hand.localPosition;
     }
     public bool grabbing = false;
     // Update is called once per frame
@@ -26,11 +26,11 @@ public class straightArmAttach : MonoBehaviour
         if (grabbing) {
             shoulder.rotation = Quaternion.LookRotation(grabTarget.position - shoulder.position) * iShoulderRelative;
             hand.position = grabTarget.position;
-            elbow.position = Vector3.Lerp(shoulder.position, hand.position, .5f);
+            if (elbow != null) elbow.position = Vector3.Lerp(shoulder.position, hand.position, .5f);
         } else {
             shoulder.localRotation = iShoulderRot;
             hand.localPosition = iHandPos;
-            elbow.localPosition = iElbowPos;
+            if (elbow != null) elbow.localPosition = iElbowPos;
         }
     }
 }

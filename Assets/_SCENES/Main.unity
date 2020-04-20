@@ -188,7 +188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8272749}
-  m_LocalRotation: {x: 0.035412006, y: 0.6302212, z: -0.027913773, w: 0.7751052}
+  m_LocalRotation: {x: 0.035412014, y: 0.63022125, z: -0.02791378, w: 0.7751052}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -340,6 +340,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &56587508
 CapsuleCollider:
@@ -454,6 +456,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &57701080
 CapsuleCollider:
@@ -568,6 +572,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &60173551
 CapsuleCollider:
@@ -707,6 +713,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &142515038
 CapsuleCollider:
@@ -1209,6 +1217,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &209464103
 CapsuleCollider:
@@ -1753,6 +1763,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &307192170
 CapsuleCollider:
@@ -1941,6 +1953,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &309888567
 CapsuleCollider:
@@ -2169,6 +2183,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &339686127
 CapsuleCollider:
@@ -2403,6 +2419,7 @@ MonoBehaviour:
   hand: {fileID: 960876077315708011}
   grabTarget: {fileID: 1576169163}
   elbow: {fileID: 8001095344751526205}
+  grabbing: 0
 --- !u!1 &403014391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,6 +2472,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &403014394
 CapsuleCollider:
@@ -2999,6 +3018,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &443210800
 CapsuleCollider:
@@ -3593,6 +3614,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &479975596
 CapsuleCollider:
@@ -3972,6 +3995,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &564191219
 CapsuleCollider:
@@ -4086,6 +4111,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &569463719
 CapsuleCollider:
@@ -4529,6 +4556,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!1 &661529087
 GameObject:
@@ -4582,6 +4611,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &661529090
 CapsuleCollider:
@@ -5112,6 +5143,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &691504943
 CapsuleCollider:
@@ -5226,6 +5259,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &710079476
 CapsuleCollider:
@@ -5340,6 +5375,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &721471089
 CapsuleCollider:
@@ -5832,6 +5869,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &803249967
 CapsuleCollider:
@@ -5946,6 +5985,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &825376711
 CapsuleCollider:
@@ -6122,6 +6163,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &849428188
 CapsuleCollider:
@@ -6346,6 +6389,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &932931463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6157165780183112089, guid: 42ec8c519108c19478d98c6cefe23e22,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393892256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &932931464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932931463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee25101a1308774bb6383ff5dcb1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shoulder: {fileID: 0}
+  hand: {fileID: 0}
+  grabTarget: {fileID: 0}
+  elbow: {fileID: 0}
+  grabbing: 0
 --- !u!1 &939618300
 GameObject:
   m_ObjectHideFlags: 0
@@ -6853,6 +6919,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &997343624
 CapsuleCollider:
@@ -7201,6 +7269,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1054758174
 CapsuleCollider:
@@ -12248,6 +12318,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1121557977
 CapsuleCollider:
@@ -12581,6 +12653,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1147246594
 CapsuleCollider:
@@ -12695,6 +12769,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1149357271
 CapsuleCollider:
@@ -13040,6 +13116,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1191142023
 CapsuleCollider:
@@ -13278,6 +13356,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1231845682
 CapsuleCollider:
@@ -13497,6 +13577,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1262660672
 CapsuleCollider:
@@ -13611,6 +13693,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1268417906
 CapsuleCollider:
@@ -13888,6 +13972,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1308385811
 CapsuleCollider:
@@ -14002,6 +14088,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1336109621
 CapsuleCollider:
@@ -14306,6 +14394,96 @@ Transform:
   m_Father: {fileID: 691295632}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1393892256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1647253067}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6990051
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.31000137
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.18685406
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9823877
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.644
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.644
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.644
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_Name
+      value: Bunny_Rigged_2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42ec8c519108c19478d98c6cefe23e22, type: 3}
+--- !u!4 &1393892257 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 42ec8c519108c19478d98c6cefe23e22,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393892256}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1414328475
 GameObject:
   m_ObjectHideFlags: 0
@@ -14472,6 +14650,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1421299762
 CapsuleCollider:
@@ -20283,6 +20463,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1547787104
 CapsuleCollider:
@@ -20699,6 +20881,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1596253191
 CapsuleCollider:
@@ -20887,6 +21071,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1631640883
 CapsuleCollider:
@@ -21329,6 +21515,7 @@ Transform:
   - {fileID: 1369862393}
   - {fileID: 1874499053}
   - {fileID: 589215798}
+  - {fileID: 1393892257}
   - {fileID: 5006512736739989161}
   m_Father: {fileID: 1528074232}
   m_RootOrder: 3
@@ -21467,6 +21654,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1674802125
 CapsuleCollider:
@@ -21581,6 +21770,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1683966563
 CapsuleCollider:
@@ -21726,6 +21917,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1688691731
 CapsuleCollider:
@@ -21871,6 +22064,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1694829556
 CapsuleCollider:
@@ -22211,6 +22406,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1742912367
 CapsuleCollider:
@@ -22694,6 +22891,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1794841040
 CapsuleCollider:
@@ -22951,6 +23150,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1829559712
 CapsuleCollider:
@@ -23566,6 +23767,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1885072058
 CapsuleCollider:
@@ -24532,6 +24735,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &1977599507
 CapsuleCollider:
@@ -24844,6 +25049,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &2026344486
 CapsuleCollider:
@@ -25084,6 +25291,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &2036223044
 CapsuleCollider:
@@ -25339,6 +25548,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &2065255479
 CapsuleCollider:
@@ -25524,6 +25735,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &2086535305
 CapsuleCollider:
@@ -25794,6 +26007,8 @@ MonoBehaviour:
   launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
+  animator: {fileID: 0}
+  instatiateUpVector: 0
   projectileLifeTime: 6
 --- !u!136 &2135216575
 CapsuleCollider:
@@ -29470,7 +29685,7 @@ Transform:
   - {fileID: 2844516965807727685}
   - {fileID: 9107658925921338950}
   m_Father: {fileID: 1647253067}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 21.538, y: 0, z: 0}
 --- !u!23 &5042133867928836936
 MeshRenderer:
@@ -31615,7 +31830,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &8296172668068761838
 GameObject:
   m_ObjectHideFlags: 0

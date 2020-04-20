@@ -38,6 +38,7 @@ public class PlayerControllerController : MonoBehaviour
         freeRoamCollider.enabled = false;
         freeRoamController.enabled = false;
         orbitController.enabled = true;
+        looker.planet = p.transform;
         looker.slow = true;
         looker.enabled = true;
         // freeCam.m_LookAt = p.transform;
