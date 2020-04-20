@@ -43,7 +43,6 @@ public class PlanetGesture : MonoBehaviour
     public IEnumerator FaceAnimation(int iState, float amount)
     {
         float journey = 0f;
-        Debug.Log("Set Gesture");
         float start = planetFace.GetBlendShapeWeight((int)iState);
         while (journey <= duration)
         {
