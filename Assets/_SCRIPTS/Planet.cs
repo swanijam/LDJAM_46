@@ -35,6 +35,17 @@ public class Planet : MonoBehaviour
         StartCoroutine(CombatSpin());
     }
 
+    public GameObject ExplodeEffect;
+    public GameObject body;
+    public GameObject Heart;
+    public void Explode() {
+        ExplodeEffect.SetActive(true);
+        body.SetActive(false);
+    }
+    public void SpawnHeart() {
+        Heart.SetActive(true);
+    }
+
     public AnimationCurve IdleSpinCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     public float IdleSpinTime = 5f;
     float combatSpinMod = 0f, combatSpinModVelocity = 0f;
