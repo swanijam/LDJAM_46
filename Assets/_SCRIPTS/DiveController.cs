@@ -18,6 +18,7 @@ public class DiveController : MonoBehaviour
     public Vector2 shakeFreqRange;
     public CinemachineVirtualCamera diveCam;
     public float ejectDrag = 1f;
+    public GameObject lance;
     
     // state vars
     Vector3 planetiSize = Vector3.one;
@@ -95,6 +96,8 @@ public class DiveController : MonoBehaviour
         looker.enabled = false;
         activateBlack.Invoke();
         yield return new WaitForSeconds(blackTime);
+
+        lance.gameObject.SetActive(false);    
         // drill time
         activateDrill.Invoke();
         yield return new WaitForSeconds(drillTime);

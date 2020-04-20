@@ -112,21 +112,22 @@ public class Planet : MonoBehaviour
     {
         if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
             PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
+            if (pcc == null) Debug.LogError("not a player", other.gameObject);
             pcc.BeginOrbitCombat(this);
         }
     }
     
-    private void OnTriggerExit(Collider other)
-    {
-        if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
-            PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
-            // SetLaunchersEnabled(false);
-            // StopAllCoroutines();
-            // curTargetIdleSpin = idleSpinMaxSpeed;
-            // StartCoroutine(IdleSpin());
-            StopAttacking();
-        }
-    }
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
+    //         PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
+    //         // SetLaunchersEnabled(false);
+    //         // StopAllCoroutines();
+    //         // curTargetIdleSpin = idleSpinMaxSpeed;
+    //         // StartCoroutine(IdleSpin());
+    //         StopAttacking();
+    //     }
+    // }
     public void StopAttacking() {
         SetLaunchersEnabled(false);
         StopAllCoroutines();

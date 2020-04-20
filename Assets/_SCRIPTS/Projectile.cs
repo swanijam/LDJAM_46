@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour
     {
         if (layerMask == (layerMask | (1 << other.gameObject.layer))) {
             other.gameObject.GetComponent<PlayerControllerController>().TakeDamage();
-            parentPlanet.StopAttacking();
+            // parentPlanet.StopAttacking();
         }
     }
 }
