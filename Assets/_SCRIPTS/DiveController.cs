@@ -18,6 +18,7 @@ public class DiveController : MonoBehaviour
     public Vector2 shakeFreqRange;
     public CinemachineVirtualCamera diveCam;
     public float ejectDrag = 1f;
+    public GameObject lance;
     
     // state vars
     Vector3 planetiSize = Vector3.one;
@@ -36,6 +37,7 @@ public class DiveController : MonoBehaviour
 
     public void InitializeWithPlanet(Planet p) {
         curPlanetTarget = p.transform;
+        curPlanet = p;
         planetiSize = p.transform.localScale;
         planetiOffset = p.transform.position-transform.position;
         diveCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = shakeAmplitudeRange.x;
@@ -95,6 +97,8 @@ public class DiveController : MonoBehaviour
         looker.enabled = false;
         activateBlack.Invoke();
         yield return new WaitForSeconds(blackTime);
+
+        lance.gameObject.SetActive(false);    
         // drill time
         activateDrill.Invoke();
         yield return new WaitForSeconds(drillTime);
@@ -104,6 +108,8 @@ public class DiveController : MonoBehaviour
         yield return new WaitForSeconds(whiteTime);
         // hard cut to distant camera,
         activateExit.Invoke();
+        curPlanet.Explode();
+        curPlanet.SpawnHeart();
         curPlanetTarget.transform.localScale = planetiSize;
         transform.position = curPlanetTarget.transform.position;
         transform.rotation = Quaternion.LookRotation(-Vector3.right, Vector3.up);

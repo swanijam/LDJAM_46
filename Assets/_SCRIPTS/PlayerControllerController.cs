@@ -5,6 +5,7 @@ using Cinemachine;
 
 public class PlayerControllerController : MonoBehaviour
 {
+    public int playerMaxHealth = 5;
     public Planet d_iPlanet;
     public FightOrbitController orbitController;
     public CinemachineVirtualCamera orbitCam;
@@ -22,10 +23,14 @@ public class PlayerControllerController : MonoBehaviour
     public CinemachineFreeLook freeCam;
     public CinemachineVirtualCamera freeIntermediateCam;
     public CinemachineVirtualCamera farCam;
+    public healthbar healthbar;
+    public static bool invincible = false;
     private void OnEnable()
     {
         // d_iPlanet.onHealthZero += BeginDescent;
         // BeginOrbitCombat(d_iPlanet);
+        healthbar.varRange.y = playerMaxHealth;
+        healthbar.health = playerMaxHealth;
     }
 
     public void BeginOrbitCombat(Planet p) {
@@ -94,6 +99,9 @@ public class PlayerControllerController : MonoBehaviour
         orbitController.enabled = false;
         freeRoamController.enabled = false;
 
+        orbitController.SPEAR.gameObject.GetComponent<ScaleFader>().FadeToMin();
+        diveController.lance.gameObject.SetActive(true);
+        
         
         orbitCam.gameObject.SetActive(false);
         freeCam.gameObject.SetActive(false);
@@ -123,10 +131,16 @@ public class PlayerControllerController : MonoBehaviour
     }
 
     public void TakeDamage() {
-        StartCoroutine(_TakeDamage());
+        if (invincible) return;
+        healthbar.health--;
+        if (healthbar.health <= 0) {
+            StartCoroutine(_TakeDamage());
+        }
     }
     public IEnumerator _TakeDamage() {
         Debug.Log("DAMAGE TAKE");
+        PlayerControllerController.invincible = true;
+        orbitController.planet.StopAttacking();
         freeRoamCollider.enabled = false;
         orbitController.enabled = false;
         takeDamageCam.gameObject.SetActive(true);
@@ -149,21 +163,12 @@ public class PlayerControllerController : MonoBehaviour
         freeCam.gameObject.SetActive(true);
         yield return new WaitForSeconds(ejectDecay); // wait for recentering through intermediateCam
         freeCam.m_BindingMode = CinemachineTransposer.BindingMode.SimpleFollowWithWorldUp;
-        // toggle a recenter
-                // float currTime = 0f;
-                // float lerpVal;
-                // float startX = freeCam.m_XAxis.Value;
-                // float startY = freeCam.m_YAxis.Value;
-                // WaitForEndOfFrame wfeof = new WaitForEndOfFrame();
-                // while (currTime < 1.5f) {
-                //     currTime += Time.deltaTime;
-                //     lerpVal = Mathf.InverseLerp(0f, 1.5f, currTime);
-                //     freeCam.m_XAxis.Value = Mathf.Lerp(startX, 0f, lerpVal);
-                //     freeCam.m_YAxis.Value = Mathf.Lerp(startY, 0.5f, lerpVal);
-                //     yield return wfeof;
-                // }
+
         freeRoamCollider.enabled = true;
         freeRoamController.enabled = true;
         GetComponent<Rigidbody>().drag = prevDrag;
+        yield return new WaitForSeconds(.5f);
+        healthbar.FadeToMax(); // return to max health
+        PlayerControllerController.invincible = false;
     }
 }

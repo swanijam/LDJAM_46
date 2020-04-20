@@ -7,28 +7,30 @@ public class Spear : MonoBehaviour
     public float launchSpeed = 3f;
     Vector3 fullSpearScale; 
     public GameObject trail;
-    
+    bool startZero = true;
     // Start is called before the first frame update
-    void OnEnable()
+    void Start()
     {
         fullSpearScale = transform.localScale;
+        if (startZero) transform.localScale = Vector3.zero;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void Ready() {
+        Debug.Log("ready??");
+        StartCoroutine(ReadySpearAnim());
     }
 
     public void MoveToReadyPosition () {
         transform.localPosition -= Vector3.forward * 2f;
     }
-    public bool spearIsReady = true;
-    public void Launch() {
-        if (!spearIsReady) return;
+    public bool spearIsReady = false;
+    public bool Launch() {
+        if (!spearIsReady) return false;
         GameObject newgo = Instantiate(gameObject, transform.position, transform.rotation, null);
+        newgo.GetComponent<Spear>().startZero = false;
         newgo.GetComponent<Spear>().spearIsReady = false;
-        newgo.AddComponent<BoxCollider>();
+        newgo.transform.localScale = fullSpearScale;
+        newgo.GetComponent<BoxCollider>().enabled = true;
         Rigidbody rigidbody = newgo.AddComponent<Rigidbody>();
         rigidbody.useGravity = false;
         rigidbody.isKinematic = false;
@@ -39,7 +41,9 @@ public class Spear : MonoBehaviour
         transform.localScale = Vector3.zero;
         spearIsReady = false;
         StartCoroutine(ReadySpearAnim());
+        return true;
     }
+
 
 
     public float readyDelay = 3f;
@@ -61,6 +65,7 @@ public class Spear : MonoBehaviour
 
     public LayerMask planetSurfLayer;
     public LayerMask planetWeakPointLayer;
+    public LayerMask heartLayer;
 
     public GameObject impactVFXPrefab, weakPointVFXPrefab;
     private void OnCollisionEnter(Collision other)
@@ -85,6 +90,11 @@ public class Spear : MonoBehaviour
             rb.isKinematic = true;
             transform.SetParent(other.transform);
             other.gameObject.GetComponent<WeakPoint>().TakeHit();
+        }
+        if (heartLayer == (heartLayer | (1 << other.gameObject.layer))) {
+            GameObject vfx = Instantiate(weakPointVFXPrefab, other.GetContact(0).point + normal, Quaternion.LookRotation(normal));
+            vfx.transform.up = normal;
+            other.gameObject.GetComponent<PlanetHeart>().FeedToPlanetEater();
         }
     }
 }

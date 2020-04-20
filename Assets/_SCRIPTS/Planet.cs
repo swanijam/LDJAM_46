@@ -36,6 +36,20 @@ public class Planet : MonoBehaviour
         StartCoroutine(CombatSpin());
     }
 
+    public GameObject ExplodeEffect;
+    public GameObject body;
+    public GameObject Heart;
+    public void Explode() {
+        ExplodeEffect.SetActive(true);
+        body.SetActive(false);
+    }
+    public void SpawnHeart() {
+        Heart.SetActive(true);
+    }
+    public void HeartVulnerable() {
+        Heart.GetComponent<Collider>().enabled = true;
+    }
+
     public AnimationCurve IdleSpinCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     public float IdleSpinTime = 5f;
     float combatSpinMod = 0f, combatSpinModVelocity = 0f;
@@ -120,21 +134,22 @@ public class Planet : MonoBehaviour
         if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
             enterPlanet();
             PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
+            if (pcc == null) Debug.LogError("not a player", other.gameObject);
             pcc.BeginOrbitCombat(this);
         }
     }
     
-    private void OnTriggerExit(Collider other)
-    {
-        if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
-            PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
-            // SetLaunchersEnabled(false);
-            // StopAllCoroutines();
-            // curTargetIdleSpin = idleSpinMaxSpeed;
-            // StartCoroutine(IdleSpin());
-            StopAttacking();
-        }
-    }
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
+    //         PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
+    //         // SetLaunchersEnabled(false);
+    //         // StopAllCoroutines();
+    //         // curTargetIdleSpin = idleSpinMaxSpeed;
+    //         // StartCoroutine(IdleSpin());
+    //         StopAttacking();
+    //     }
+    // }
     public void StopAttacking() {
         SetLaunchersEnabled(false);
         StopAllCoroutines();
