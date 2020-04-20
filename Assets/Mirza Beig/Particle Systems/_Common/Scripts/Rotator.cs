@@ -18,7 +18,7 @@ namespace MirzaBeig
         // =================================	
         // Classes.
         // =================================
-
+        [ExecuteInEditMode]
         public class Rotator : MonoBehaviour
         {
             // =================================	
@@ -67,16 +67,16 @@ namespace MirzaBeig
 
             // ...
 
-            void OnRenderObject()
-            {
-                if (executeInEditMode)
-                {
-                    if (!Application.isPlaying)
-                    {
-                        rotate();
-                    }
-                }
-            }
+            // void OnRenderObject()
+            // {
+            //     if (executeInEditMode)
+            //     {
+            //         if (!Application.isPlaying)
+            //         {
+            //             rotate();
+            //         }
+            //     }
+            // }
 
             // ...
 
@@ -85,6 +85,13 @@ namespace MirzaBeig
                 if (Application.isPlaying)
                 {
                     rotate();
+                }
+                if (executeInEditMode)
+                {
+                    if (!Application.isPlaying)
+                    {
+                        rotate();
+                    }
                 }
             }
 
