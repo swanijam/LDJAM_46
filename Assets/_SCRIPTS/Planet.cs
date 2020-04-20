@@ -132,7 +132,7 @@ public class Planet : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
-            enterPlanet();
+            if (enterPlanet != null) enterPlanet();
             PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
             if (pcc == null) Debug.LogError("not a player", other.gameObject);
             pcc.BeginOrbitCombat(this);
