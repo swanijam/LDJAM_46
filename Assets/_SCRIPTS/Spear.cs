@@ -65,6 +65,7 @@ public class Spear : MonoBehaviour
 
     public LayerMask planetSurfLayer;
     public LayerMask planetWeakPointLayer;
+    public LayerMask heartLayer;
 
     public GameObject impactVFXPrefab, weakPointVFXPrefab;
     private void OnCollisionEnter(Collision other)
@@ -89,6 +90,11 @@ public class Spear : MonoBehaviour
             rb.isKinematic = true;
             transform.SetParent(other.transform);
             other.gameObject.GetComponent<WeakPoint>().TakeHit();
+        }
+        if (heartLayer == (heartLayer | (1 << other.gameObject.layer))) {
+            GameObject vfx = Instantiate(weakPointVFXPrefab, other.GetContact(0).point + normal, Quaternion.LookRotation(normal));
+            vfx.transform.up = normal;
+            other.gameObject.GetComponent<PlanetHeart>().FeedToPlanetEater();
         }
     }
 }

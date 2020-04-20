@@ -45,6 +45,9 @@ public class Planet : MonoBehaviour
     public void SpawnHeart() {
         Heart.SetActive(true);
     }
+    public void HeartVulnerable() {
+        Heart.GetComponent<Collider>().enabled = true;
+    }
 
     public AnimationCurve IdleSpinCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     public float IdleSpinTime = 5f;
