@@ -9,6 +9,7 @@ public class PeriodicallyLaunchObject : MonoBehaviour
     public Vector3 localLaunchVector = Vector3.up;
     public float launchSpeed = 20f;
     public bool firing = false;
+    public Planet parentPlanet;
     private void OnEnable()
     {
         StartCoroutine(LaunchLoop());
@@ -21,6 +22,7 @@ public class PeriodicallyLaunchObject : MonoBehaviour
                 continue;
             }
             GameObject go = Instantiate(projectile, transform.position, Quaternion.LookRotation(transform.TransformDirection(localLaunchVector), Vector3.up), null);
+            go.GetComponent<Projectile>().parentPlanet = parentPlanet;
             go.transform.localScale = projectile.transform.localScale;
             go.SetActive(true);
             go.GetComponent<Rigidbody>().velocity = go.transform.forward * launchSpeed;

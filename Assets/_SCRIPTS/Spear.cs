@@ -61,12 +61,20 @@ public class Spear : MonoBehaviour
 
     public LayerMask planetSurfLayer;
     public LayerMask planetWeakPointLayer;
+
+    public GameObject impactVFXPrefab, weakPointVFXPrefab;
     private void OnCollisionEnter(Collision other)
     {
+        Vector3 normal = -transform.forward;
         if (planetSurfLayer == (planetSurfLayer | (1 << other.gameObject.layer))) {
             // bounce off planet surf
+            GameObject vfx = Instantiate(impactVFXPrefab, other.GetContact(0).point + normal, Quaternion.LookRotation(normal));
+            vfx.transform.up = normal;
         }
         if (planetWeakPointLayer == (planetWeakPointLayer | (1 << other.gameObject.layer))) {
+            GameObject vfx = Instantiate(weakPointVFXPrefab, other.GetContact(0).point + normal, Quaternion.LookRotation(normal));
+            vfx.transform.up = normal;
+            // vfx.transform.up = normal;
             // stick into weak points
             Debug.Log("HIT WEAK POINT");
             transform.position = other.GetContact(0).point + other.GetContact(0).normal * 1f;

@@ -11,6 +11,11 @@ public class Planet : MonoBehaviour
     {
         StartCoroutine(IdleSpin());
         plos = GetComponentsInChildren<PeriodicallyLaunchObject>();
+        foreach (PeriodicallyLaunchObject plo in plos) {
+            if (plo != null) {
+                plo.parentPlanet = this;
+            }
+        }
     }
     public float  idleSpinSmoothTime = 2f, idleSpinMaxSpeed = 60f;
     public float curTargetIdleSpin = 60f;
@@ -115,10 +120,17 @@ public class Planet : MonoBehaviour
     {
         if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
             PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
-            SetLaunchersEnabled(false);
-            StopAllCoroutines();
-            curTargetIdleSpin = idleSpinMaxSpeed;
-            StartCoroutine(IdleSpin());
+            // SetLaunchersEnabled(false);
+            // StopAllCoroutines();
+            // curTargetIdleSpin = idleSpinMaxSpeed;
+            // StartCoroutine(IdleSpin());
+            StopAttacking();
         }
+    }
+    public void StopAttacking() {
+        SetLaunchersEnabled(false);
+        StopAllCoroutines();
+        curTargetIdleSpin = idleSpinMaxSpeed;
+        StartCoroutine(IdleSpin());
     }
 }
