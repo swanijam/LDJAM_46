@@ -137,6 +137,13 @@ public class PlayerControllerController : MonoBehaviour
             StartCoroutine(_TakeDamage());
         }
     }
+    public void TakeAllDamage() {
+        if (invincible) return;
+        healthbar.health = 0;
+        if (healthbar.health <= 0) {
+            StartCoroutine(_TakeDamage());
+        }
+    }
     public IEnumerator _TakeDamage() {
         Debug.Log("DAMAGE TAKE");
         PlayerControllerController.invincible = true;

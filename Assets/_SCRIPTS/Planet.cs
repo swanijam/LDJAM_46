@@ -79,6 +79,7 @@ public class Planet : MonoBehaviour
     public event OnHurtPlanet onHurtPlanet;
 
     public void TakeDamage() {
+        if(onHurtPlanet != null) onHurtPlanet();
         health--;
         SetLaunchersEnabled(false);
         if (health <= 0 && onHealthZero != null) onHealthZero();
