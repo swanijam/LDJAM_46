@@ -26,7 +26,7 @@ public class LaserVFXController : MonoBehaviour
     public void Start()
     {
         // Enable this for testing in editor
-        // StartCoroutine(PlayLoop());
+        StartCoroutine(PlayLoop());
     }
 
     public IEnumerator PlayLoop()
