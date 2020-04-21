@@ -3,7 +3,67 @@ guid: 42ec8c519108c19478d98c6cefe23e22
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArmsHands
+    second: {fileID: 2100000, guid: 63c3efb3a259c62439185acb8e02ac29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blackboots
+    second: {fileID: 2100000, guid: c70f2adc40f743c4d8ec7a5413516274, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ears_Mat
+    second: {fileID: 2100000, guid: 639a12ebc686650489f1e2063e3fa9eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FacecardMat
+    second: {fileID: 2100000, guid: 4299259e2e979514fb5d2b8d4174b31f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontHeadMat
+    second: {fileID: 2100000, guid: db40714ec96c2724da90ee8a8429c0e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Greyboots
+    second: {fileID: 2100000, guid: 51858c9391b5a7642a95564e6b3fe5fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HeadMat
+    second: {fileID: 2100000, guid: cea89bd253e4f2845bc6e77db0681c9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LegsMat
+    second: {fileID: 2100000, guid: 27ef0f90e48a78f4e87bf9710ad0707a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pinkboots
+    second: {fileID: 2100000, guid: 75734eb26a78f024995f4a66d5933254, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sweater Sleeves
+    second: {fileID: 2100000, guid: 3ce846b35229d1d4ebab1bfc487e64ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SweaterTorsoMat
+    second: {fileID: 2100000, guid: d5c82aa7e98612f4e9ee51f69bdcb147, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Whiteboots
+    second: {fileID: 2100000, guid: e114408d92dcc5e4bb4e7a7d0a342ddd, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -15,8 +75,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
-      human bone 'LeftFoot' not found\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
