@@ -877,7 +877,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserSystem
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8859015279318047905, guid: 064433549fa381647abdb2f56b31a8c7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 064433549fa381647abdb2f56b31a8c7, type: 3}
 --- !u!1001 &9043416503528677566
 PrefabInstance:

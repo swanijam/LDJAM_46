@@ -9,6 +9,7 @@ public class LaserVFXController : MonoBehaviour
     public Transform chargeSphere;
     public Material dishMaterial;
     public GameObject particleSystems;
+    public ParticleSystem systemParent;
     
     [Header("Animation Settings")]
     public float sphereChargeAnimLength;
@@ -17,17 +18,30 @@ public class LaserVFXController : MonoBehaviour
     public AnimationCurve dishAnimCurve;
     public AnimationCurve beamAnimCurve;
     public Animator eyeAnimController;
-
     public float fullBeamWidth;
+
+    public bool play;
     private float dishMaskVal = 0;
 
     public void Start()
     {
-        StartEyeLaserSequence();
+        // Enable this for testing in editor
+        // StartCoroutine(PlayLoop());
+    }
+
+    public IEnumerator PlayLoop()
+    {
+        while(true)
+        {
+            yield return new WaitUntil(() => play);
+            StartEyeLaserSequence();
+            play = false;
+        }
     }
 
     public void StartEyeLaserSequence()
     {
+        // systemParent.Play();
         eyeAnimController.SetBool("Laser", true);
         ChargeLaser();
     }
@@ -61,8 +75,9 @@ public class LaserVFXController : MonoBehaviour
 
     public void ChargeLaser()
     {
-        particleSystems.SetActive(true);
+        particleSystems.SetActive(false);
         StartCoroutine(ChargeRoutine());
+        particleSystems.SetActive(true);
     }
     
     public void FireLaser()
