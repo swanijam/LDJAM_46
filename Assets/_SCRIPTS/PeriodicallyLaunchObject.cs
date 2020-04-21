@@ -8,6 +8,13 @@ public class PeriodicallyLaunchObject : PeriodicallyAttack
     public Vector3 localLaunchVector = Vector3.up;
     public float launchSpeed = 20f;
     public float instatiateUpVector;
+    
+    private void OnEnable()
+    {
+        animator = GetComponent<Animator>();
+        StartCoroutine(LaunchLoop());
+    }
+
     public override IEnumerator LaunchLoop()
     {
         yield return new WaitForSeconds(Random.Range(0f, 5f));
@@ -18,7 +25,7 @@ public class PeriodicallyLaunchObject : PeriodicallyAttack
                 yield return new WaitForSeconds(interval);
                 continue;
             }
-            animator.SetTrigger("Spit");
+            if (animator!= null) animator.SetTrigger("Spit");
             yield return new WaitForSeconds(0.67f);
             GameObject go = Instantiate(projectile, transform.position + transform.up * instatiateUpVector, Quaternion.LookRotation(transform.TransformDirection(localLaunchVector), Vector3.up), null);
             go.GetComponent<Projectile>().parentPlanet = parentPlanet;
