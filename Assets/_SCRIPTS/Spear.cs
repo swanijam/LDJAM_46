@@ -72,33 +72,69 @@ public class Spear : MonoBehaviour
     public LayerMask heartLayer;
 
     public GameObject impactVFXPrefab, weakPointVFXPrefab;
+    public AudioSource hitMiss, hitWeakPoint;
+    public bool hitsurf = false, hitweakPoint = false;
+    Collision cacheCollisionSurf;
+    Collision cacheCollisionWeakPt;
+    Vector3 cacheCollisionNormal;
     private void OnCollisionEnter(Collision other)
     {
         Vector3 normal = -transform.forward;
         if (planetSurfLayer == (planetSurfLayer | (1 << other.gameObject.layer))) {
-            // bounce off planet surf
-            GameObject vfx = Instantiate(impactVFXPrefab, other.GetContact(0).point + normal, Quaternion.LookRotation(normal));
-            vfx.transform.up = normal;
+            hitsurf = true;
+            cacheCollisionSurf = other;
+            cacheCollisionNormal = normal;
         }
         if (planetWeakPointLayer == (planetWeakPointLayer | (1 << other.gameObject.layer))) {
-            GameObject vfx = Instantiate(weakPointVFXPrefab, other.GetContact(0).point + normal, Quaternion.LookRotation(normal));
-            vfx.transform.up = normal;
-            // vfx.transform.up = normal;
-            // stick into weak points
-            Debug.Log("HIT WEAK POINT");
-            transform.position = other.GetContact(0).point + other.GetContact(0).normal * 1f;
-            transform.rotation = Quaternion.LookRotation((other.GetContact(0).point-transform.position).normalized);
-            GetComponent<Collider>().enabled = false;
-            Rigidbody rb = GetComponent<Rigidbody>();
-            rb.velocity = Vector3.zero;
-            rb.isKinematic = true;
-            transform.SetParent(other.transform);
+            hitweakPoint = true;
             other.gameObject.GetComponent<WeakPoint>().TakeHit();
+            cacheCollisionWeakPt = other;
+            cacheCollisionNormal = normal;
         }
         if (heartLayer == (heartLayer | (1 << other.gameObject.layer))) {
             GameObject vfx = Instantiate(weakPointVFXPrefab, other.GetContact(0).point + normal, Quaternion.LookRotation(normal));
             vfx.transform.up = normal;
             other.gameObject.GetComponent<PlanetHeart>().FeedToPlanetEater();
+            hitWeakPoint.PlayOneShot(hitWeakPoint.clip);
+            hitMiss.PlayOneShot(hitMiss.clip);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        Respond2Collision();
+        // Debug.Log(cacheCollision == null);
+        cacheCollisionNormal = transform.forward;
+        cacheCollisionSurf = null;
+        cacheCollisionWeakPt = null;
+        hitsurf = false;
+        hitweakPoint = false;
+    }
+
+    private void Respond2Collision() {
+        
+        if (hitweakPoint) {
+            Vector3 normal = cacheCollisionNormal;
+            GameObject vfx = Instantiate(weakPointVFXPrefab, cacheCollisionWeakPt.GetContact(0).point + normal, Quaternion.LookRotation(normal));
+            vfx.transform.up = normal;
+            // vfx.transform.up = normal;
+            // stick into weak points
+            Debug.Log("HIT WEAK POINT", cacheCollisionWeakPt.gameObject);
+            transform.position = cacheCollisionWeakPt.GetContact(0).point + cacheCollisionWeakPt.GetContact(0).normal * 1f;
+            transform.rotation = Quaternion.LookRotation((cacheCollisionWeakPt.GetContact(0).point-transform.position).normalized);
+            GetComponent<Collider>().enabled = false;
+            Rigidbody rb = GetComponent<Rigidbody>();
+            rb.velocity = Vector3.zero;
+            rb.isKinematic = true;
+            transform.SetParent(cacheCollisionWeakPt.transform);
+            hitWeakPoint.PlayOneShot(hitWeakPoint.clip);
+        }
+        else if (hitsurf) {
+        Vector3 normal = cacheCollisionNormal;
+            // bounce off planet surf
+            GameObject vfx = Instantiate(impactVFXPrefab, cacheCollisionSurf.GetContact(0).point + normal, Quaternion.LookRotation(normal));
+            vfx.transform.up = normal;
+            hitMiss.PlayOneShot(hitMiss.clip);
         }
     }
 }

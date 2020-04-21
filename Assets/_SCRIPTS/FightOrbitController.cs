@@ -18,6 +18,7 @@ public class FightOrbitController : MonoBehaviour
     public Spear SPEAR;
     public Animator bunnyAnimator;
     public AimLine aim;
+    public AudioSource SpearThrow;
     Rigidbody rb;
     [HideInInspector]
     public bool inputEnabled;
@@ -68,6 +69,7 @@ public class FightOrbitController : MonoBehaviour
                 spearReady = false;
                  if (aim != null) aim.strength = 0f;
                 if (SPEAR.Launch() ) {
+                    SpearThrow.PlayOneShot(SpearThrow.clip);
                     if (bunnyAnimator != null) bunnyAnimator.SetBool("throwWindUp", false);
                     StartCoroutine(animateFOV());
                 }

@@ -19,6 +19,9 @@ public class DiveController : MonoBehaviour
     public CinemachineVirtualCamera diveCam;
     public float ejectDrag = 1f;
     public GameObject lance;
+    public AudioSource ambientSpace;
+    public AudioSource ambientOrbit;
+    public AudioSource DiveAir;
     
     // state vars
     Vector3 planetiSize = Vector3.one;
@@ -53,6 +56,7 @@ public class DiveController : MonoBehaviour
     void Update()
     {
         if (!fullCharge && Input.GetMouseButton(0)) {
+            if (!DiveAir.isPlaying) DiveAir.Play();
             rb.velocity += camera.TransformDirection(GetInputTranslationDirection()) * accelPerSec;
             rb.velocity = rb.velocity.normalized * Mathf.Min(maxSpeed, rb.velocity.magnitude);
             descentVelocity = dvelocity;
@@ -73,6 +77,7 @@ public class DiveController : MonoBehaviour
         curPlanetTarget.position = surfacePosition + -planetToPlayer * iradius * (newScale_Offset);
         // Debug.Log(Vector3.Distance(surfacePosition, transform.position));
         float lerpVal = camEffectCurve.Evaluate(Mathf.InverseLerp(maxDistance, minDistance, Vector3.Distance(surfacePosition, transform.position)));
+        // DiveAir.volume = lerpVal;
         // Debug.Log(lerpVal +", "+ Vector3.Distance(surfacePosition, transform.position));
         diveCam.m_Lens.FieldOfView = Mathf.Lerp(fovMax, fovMin, lerpVal);
         diveCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = Mathf.Lerp(shakeAmplitudeRange.x, shakeAmplitudeRange.y, lerpVal);
@@ -96,6 +101,9 @@ public class DiveController : MonoBehaviour
         // cover screen with black
         looker.enabled = false;
         activateBlack.Invoke();
+        DiveAir.Stop();
+        ambientOrbit.GetComponent<FadeVolume>().SetToMin();
+        ambientSpace.Pause();
         yield return new WaitForSeconds(blackTime);
 
         lance.gameObject.SetActive(false);    
@@ -107,6 +115,8 @@ public class DiveController : MonoBehaviour
         activateWhite.Invoke();
         yield return new WaitForSeconds(whiteTime);
         // hard cut to distant camera,
+        // ambientOrbit.GetComponent<FadeVolume>().SetToMin();
+        ambientSpace.Play();
         activateExit.Invoke();
         curPlanet.Explode();
         curPlanet.SpawnHeart();
