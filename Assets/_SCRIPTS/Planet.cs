@@ -5,13 +5,13 @@ public class Planet : MonoBehaviour
 {
     public int health = 3;
     public Cinemachine.CinemachineImpulseSource cinemachineImpulseSource;
-    public PeriodicallyLaunchObject[] plos;
+    public PeriodicallyAttack[] plos;
     // Start is called before the first frame update
     void OnEnable()
     {
         StartCoroutine(IdleSpin());
-        plos = GetComponentsInChildren<PeriodicallyLaunchObject>();
-        foreach (PeriodicallyLaunchObject plo in plos) {
+        plos = GetComponentsInChildren<PeriodicallyAttack>();
+        foreach (PeriodicallyAttack plo in plos) {
             if (plo != null) {
                 plo.parentPlanet = this;
             }
@@ -79,6 +79,7 @@ public class Planet : MonoBehaviour
     public event OnHurtPlanet onHurtPlanet;
 
     public void TakeDamage() {
+        if(onHurtPlanet != null) onHurtPlanet();
         health--;
         SetLaunchersEnabled(false);
         if (health <= 0 && onHealthZero != null) onHealthZero();
@@ -87,7 +88,7 @@ public class Planet : MonoBehaviour
     }
 
     public void SetLaunchersEnabled(bool _enabled) {
-        foreach(PeriodicallyLaunchObject plo in plos) {
+        foreach(PeriodicallyAttack plo in plos) {
             if (plo != null) plo.firing = _enabled;
         }
     }
