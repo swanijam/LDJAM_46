@@ -54,21 +54,21 @@ public class FightOrbitController : MonoBehaviour
             if (SPEAR.spearIsReady && Input.GetMouseButtonDown(0)) {
                 spearReady = true;
                 spearTime = 0f;
-                bunnyAnimator.SetBool("throwWindUp", true);
+                if (bunnyAnimator != null) bunnyAnimator.SetBool("throwWindUp", true);
             }
             // continue windup
             if (spearReady && Input.GetMouseButton(0)) {
                 spearTime += Time.deltaTime;
                 float lerpVal = Mathf.InverseLerp(0f, .617f, spearTime);
-                aim.strength = lerpVal;
+                if (aim != null) aim.strength = lerpVal;
                  orbitCam.m_Lens.FieldOfView = Mathf.Lerp(FOVRange.x, FOVRange.x-15f, lerpVal);
             }
             // release windup
             if (spearReady && !Input.GetMouseButton(0)) {
                 spearReady = false;
-                 aim.strength = 0f;
+                 if (aim != null) aim.strength = 0f;
                 if (SPEAR.Launch() ) {
-                    bunnyAnimator.SetBool("throwWindUp", false);
+                    if (bunnyAnimator != null) bunnyAnimator.SetBool("throwWindUp", false);
                     StartCoroutine(animateFOV());
                 }
             }
