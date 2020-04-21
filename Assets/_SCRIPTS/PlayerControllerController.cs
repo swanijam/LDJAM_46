@@ -25,6 +25,7 @@ public class PlayerControllerController : MonoBehaviour
     public CinemachineVirtualCamera farCam;
     public healthbar healthbar;
     public static bool invincible = false;
+    public AudioSource orbitAmbient;
     private void OnEnable()
     {
         // d_iPlanet.onHealthZero += BeginDescent;
@@ -34,6 +35,8 @@ public class PlayerControllerController : MonoBehaviour
     }
 
     public void BeginOrbitCombat(Planet p) {
+        Debug.Log("Beginning Orbit Combat");
+        orbitAmbient.GetComponent<FadeVolume>().FadeToMax();
         if (orbitController.enabled == true) return; // for redundant planet collisions
         freeRoamCollider.enabled = false;
         freeRoamController.enabled = false;

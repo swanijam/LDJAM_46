@@ -17,11 +17,14 @@ public class FadeVolume : MonoBehaviour
                     _volume = value;
                 }
             }
-        
-        public Vector2 varRange = Vector2.up; 
+
         public float time = 1f;
         public AnimationCurve curve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     
+
+        public void SetToMax() {
+            volume.volume = maxVolume;
+        }
         public void FadeToMax () {
             StartCoroutine(_FadeToMax(volume));
         }
@@ -39,7 +42,10 @@ public class FadeVolume : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
         }
-    
+
+        public void SetToMin() {
+            volume.volume = 0f;
+        }
         public void FadeToMin () {
             StartCoroutine(_FadeToMin(volume));
         }
