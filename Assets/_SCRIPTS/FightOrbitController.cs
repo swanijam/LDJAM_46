@@ -16,6 +16,8 @@ public class FightOrbitController : MonoBehaviour
     public float dodgeCooldown = 1.5f;
     public LookAtPlanet looker;
     public Spear SPEAR;
+    public Animator bunnyAnimator;
+    public AimLine aim;
     Rigidbody rb;
     [HideInInspector]
     public bool inputEnabled;
@@ -40,6 +42,7 @@ public class FightOrbitController : MonoBehaviour
     bool dashing;
     public float dashTime = 1f;
     float _dashTime = 0f;
+    float spearTime = 0f;
     void Update()
     {
         if (!dashing) {
@@ -47,13 +50,25 @@ public class FightOrbitController : MonoBehaviour
             if (inputEnabled) rb.velocity += camera.TransformDirection(inputDirection) * accelPerSec;
             rb.velocity = rb.velocity.normalized * Mathf.Min(maxSpeed, rb.velocity.magnitude);
             // Debug.Log(Vector3.Distance(transform.position, curTargetPlanet.position));
-
-            if (Input.GetMouseButtonDown(0)) {
+            // begin windup
+            if (SPEAR.spearIsReady && Input.GetMouseButtonDown(0)) {
                 spearReady = true;
+                spearTime = 0f;
+                bunnyAnimator.SetBool("throwWindUp", true);
             }
-            if (spearReady && !Input.GetMouseButtonDown(0)) {
+            // continue windup
+            if (spearReady && Input.GetMouseButton(0)) {
+                spearTime += Time.deltaTime;
+                float lerpVal = Mathf.InverseLerp(0f, .617f, spearTime);
+                aim.strength = lerpVal;
+                 orbitCam.m_Lens.FieldOfView = Mathf.Lerp(FOVRange.x, FOVRange.x-15f, lerpVal);
+            }
+            // release windup
+            if (spearReady && !Input.GetMouseButton(0)) {
                 spearReady = false;
+                 aim.strength = 0f;
                 if (SPEAR.Launch() ) {
+                    bunnyAnimator.SetBool("throwWindUp", false);
                     StartCoroutine(animateFOV());
                 }
             }
@@ -90,11 +105,13 @@ public class FightOrbitController : MonoBehaviour
         private IEnumerator animateFOV() {
             float currTime = 0f;
             float lerpVal;
+            float iFOV = orbitCam.m_Lens.FieldOfView;
             WaitForEndOfFrame wfeof = new WaitForEndOfFrame();
             while (currTime < animateFOVTime) {
                 currTime += Time.deltaTime;
                 lerpVal = animateFOVCurve.Evaluate(Mathf.InverseLerp(0f, animateFOVTime, currTime));
-                orbitCam.m_Lens.FieldOfView = Mathf.Lerp(FOVRange.x, FOVRange.y, lerpVal);
+                if (lerpVal > .95f) iFOV = FOVRange.x;
+                orbitCam.m_Lens.FieldOfView = Mathf.Lerp(iFOV, FOVRange.y, lerpVal);
                 yield return wfeof;
             }
         }

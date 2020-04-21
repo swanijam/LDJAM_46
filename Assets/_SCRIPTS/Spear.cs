@@ -8,6 +8,7 @@ public class Spear : MonoBehaviour
     Vector3 fullSpearScale; 
     public GameObject trail;
     bool startZero = true;
+    // public straightArmAttach grabby;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,13 +51,16 @@ public class Spear : MonoBehaviour
     public AnimationCurve ReadySpearAnimCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     public float ReadySpearAnimTime = 1f;
     private IEnumerator ReadySpearAnim() {
-        yield return new WaitForSeconds(readyDelay);
+        yield return new WaitForSeconds(.4f);
+        // grabby.grabbing = false;
+        yield return new WaitForSeconds(readyDelay-.4f);
         float currTime = 0f;
         float lerpVal;
         WaitForEndOfFrame wfeof = new WaitForEndOfFrame();
         while (currTime < ReadySpearAnimTime) {
             currTime += Time.deltaTime;
             lerpVal = ReadySpearAnimCurve.Evaluate(Mathf.InverseLerp(0f, ReadySpearAnimTime, currTime));
+            // if (lerpVal > .5f) grabby.grabbing = true; 
             transform.localScale = fullSpearScale * lerpVal;
             yield return wfeof;
         }

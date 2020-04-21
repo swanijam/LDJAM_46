@@ -5,32 +5,27 @@ using UnityEngine;
 public class straightArmAttach : MonoBehaviour
 {
     public Transform shoulder;
-     Quaternion iShoulderRot;
+    //  Quaternion iShoulderRot;
      Quaternion iShoulderRelative;
-     Vector3 iHandPos;
+    //  Vector3 iHandPos;
+    public Transform iHandPos;
     public Transform hand;
     public Transform grabTarget;
-    public Transform elbow;
      Vector3 iElbowPos;
     private void Awake()
     {
-        iShoulderRot = shoulder.localRotation;
         iShoulderRelative = Quaternion.FromToRotation(hand.position-shoulder.position, shoulder.forward);
-        iHandPos = hand.localPosition;
-        if (elbow != null) iElbowPos = hand.localPosition;
-    }
+     }
     public bool grabbing = false;
+    Vector3 currentTarget;
     // Update is called once per frame
+    float grabSmoothVel = 0f;
+    float lerpVal = 0f;
     void Update()
     {
-        if (grabbing) {
-            shoulder.rotation = Quaternion.LookRotation(grabTarget.position - shoulder.position) * iShoulderRelative;
-            hand.position = grabTarget.position;
-            if (elbow != null) elbow.position = Vector3.Lerp(shoulder.position, hand.position, .5f);
-        } else {
-            shoulder.localRotation = iShoulderRot;
-            hand.localPosition = iHandPos;
-            if (elbow != null) elbow.localPosition = iElbowPos;
-        }
+        lerpVal = Mathf.SmoothDamp(lerpVal, grabbing ? 1f : 0f, ref grabSmoothVel, .13f, 6f);
+        currentTarget = Vector3.Lerp(iHandPos.position, grabTarget.position, lerpVal);
+        shoulder.rotation = Quaternion.LookRotation(currentTarget - shoulder.position) * iShoulderRelative;
+        hand.position = currentTarget;     
     }
 }
