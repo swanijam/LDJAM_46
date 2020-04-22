@@ -1,7 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!136 &427616828795369614
-CapsuleCollider:
+--- !u!65 &6059974445199158517
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10,9 +10,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1
-  m_Height: 20.77353
-  m_Direction: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 20.77353, z: 3}
   m_Center: {x: 0, y: 10.490881, z: 0}
 --- !u!114 &1436454609598590611
 MonoBehaviour:
@@ -167,17 +166,17 @@ PrefabInstance:
     - target: {fileID: 7561110372842451503, guid: c002a42cf8b45df469f657c85a69f5cd,
         type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 0.039298438
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7561110372842451503, guid: c002a42cf8b45df469f657c85a69f5cd,
         type: 3}
       propertyPath: m_AABB.m_Extent.y
-      value: 0.0112499995
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7561110372842451503, guid: c002a42cf8b45df469f657c85a69f5cd,
         type: 3}
       propertyPath: m_AABB.m_Extent.z
-      value: 0.03859029
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7561110372842451503, guid: c002a42cf8b45df469f657c85a69f5cd,
         type: 3}

@@ -4882,14 +4882,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891810
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -5033,14 +5058,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891793
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -5215,14 +5265,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891891
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -5490,14 +5565,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891785
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -5672,14 +5772,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891903
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -5823,14 +5948,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891901
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -6005,14 +6155,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891790
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -6156,14 +6331,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891783
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -6369,14 +6569,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891779
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -6520,14 +6745,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891778
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -6671,14 +6921,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891890
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -6822,14 +7097,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891805
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -7004,14 +7304,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891806
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -7155,14 +7480,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891889
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -7337,14 +7687,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891776
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -7488,14 +7863,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891791
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -7701,14 +8101,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891902
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -7852,14 +8277,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891795
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -8179,14 +8629,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891807
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -8691,14 +9166,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891797
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -8873,14 +9373,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891803
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -9181,14 +9706,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891895
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -9466,14 +10016,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891782
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -9648,14 +10223,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891899
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -9830,14 +10430,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891894
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -9981,14 +10606,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891786
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -10163,14 +10813,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891801
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -10314,14 +10989,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891777
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -10527,14 +11227,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891787
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -10709,14 +11434,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891897
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -10953,14 +11703,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891804
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -11104,14 +11879,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891792
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -11286,14 +12086,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891789
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -11468,14 +12293,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891896
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -11650,14 +12500,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891802
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -12024,14 +12899,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891892
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -12175,14 +13075,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891780
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -12326,14 +13251,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891888
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -12539,14 +13489,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891800
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -12752,14 +13727,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891788
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -17774,14 +18774,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891893
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -17956,14 +18981,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891796
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -18138,14 +19188,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891900
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -18289,14 +19364,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891799
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -18440,14 +19540,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891781
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -18684,14 +19809,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891798
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -18928,14 +20078,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891794
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -19079,14 +20254,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891898
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -19261,14 +20461,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891784
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -19412,14 +20637,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1.5
-  projectile: {fileID: 0}
-  localLaunchVector: {x: 0, y: 1, z: 0}
-  launchSpeed: 10
   firing: 0
   parentPlanet: {fileID: 0}
   animator: {fileID: 0}
+  projectile: {fileID: 0}
+  localLaunchVector: {x: 0, y: 1, z: 0}
+  launchSpeed: 10
   instatiateUpVector: 3
-  projectileLifeTime: 6
+  projectileLifeTime: 3
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.11460839
+      outSlope: -0.11460839
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.39672554
+    - serializedVersion: 3
+      time: 0.99885327
+      value: -0.009511113
+      inSlope: -3.2219756
+      outSlope: -3.2219756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040372655
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 3
 --- !u!137 &327221873561891885
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -19645,7 +20895,7 @@ Animator:
   m_GameObject: {fileID: 4766705803210973983}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: df026c23253ef1b42b929f25562b4cd3, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -19654,8 +20904,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!136 &903749222925579345
-CapsuleCollider:
+--- !u!65 &1560744713861245265
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19664,10 +20914,25 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 2.44
-  m_Height: 13.29
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 7}
+  serializedVersion: 2
+  m_Size: {x: 2.54, y: 3.72, z: 13.32}
+  m_Center: {x: 4.656613e-10, y: 0, z: 6.66}
+--- !u!114 &7112585399831930506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7060050653561818163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e577d42a77dac414ca9605bff39ed9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentPlanet: {fileID: 3532881193215667983}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1001 &1651499292728334305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19757,15 +21022,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9abe72d558e9be940ac19dd34263c21f, type: 3}
---- !u!1 &7060050653561818163 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8579668944580811730, guid: 9abe72d558e9be940ac19dd34263c21f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1651499292728334305}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7060050653561818318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8579668944580811567, guid: 9abe72d558e9be940ac19dd34263c21f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1651499292728334305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7060050653561818163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8579668944580811730, guid: 9abe72d558e9be940ac19dd34263c21f,
     type: 3}
   m_PrefabInstance: {fileID: 1651499292728334305}
   m_PrefabAsset: {fileID: 0}
@@ -19878,12 +21143,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d, type: 3}
---- !u!4 &6818909420130434526 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8194956077268676526, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d,
-    type: 3}
-  m_PrefabInstance: {fileID: 3394575984412283504}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2007221371115489836 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3801286492100106332, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d,
@@ -19896,3 +21155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7c158af7b77d348af0bd9aae535649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &6818909420130434526 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8194956077268676526, guid: b84b425cf1bb4ba4dbc2d8ee79c37d3d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3394575984412283504}
+  m_PrefabAsset: {fileID: 0}
