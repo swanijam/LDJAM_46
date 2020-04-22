@@ -18,6 +18,10 @@ public class PlayerControllerController : MonoBehaviour
            _instance = value;
         }
     }
+    private void Awake()
+    {
+        instance = this;
+    }
     public int playerMaxHealth = 5;
     public Planet d_iPlanet;
     public FightOrbitController orbitController;

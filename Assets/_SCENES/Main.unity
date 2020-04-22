@@ -188,7 +188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8272749}
-  m_LocalRotation: {x: 0.035412006, y: 0.6302212, z: -0.027913773, w: 0.7751052}
+  m_LocalRotation: {x: 0.03541201, y: 0.63022125, z: -0.027913779, w: 0.77510524}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -343,6 +343,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &56587508
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -459,6 +484,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &57701080
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -575,6 +625,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &60173551
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -728,6 +803,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &142515038
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1238,6 +1338,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &209464103
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1885,6 +2010,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &307192170
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2075,6 +2225,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &309888567
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2305,6 +2480,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &339686127
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2594,6 +2794,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &403014394
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3146,6 +3371,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &443210800
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3742,6 +3992,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &479975596
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4123,6 +4398,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &564191219
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4239,6 +4539,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &569463719
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4684,6 +5009,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!1 &661529087
 GameObject:
   m_ObjectHideFlags: 0
@@ -4739,6 +5089,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &661529090
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5528,6 +5903,8 @@ MonoBehaviour:
     type: 3}
   hitMiss: {fileID: 0}
   hitWeakPoint: {fileID: 0}
+  hitImpact1: {fileID: 0}
+  hitImpact2: {fileID: 0}
   hitsurf: 0
   hitweakPoint: 0
 --- !u!65 &691295634
@@ -5644,6 +6021,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &691504943
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5867,6 +6269,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &710079476
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5983,6 +6410,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &721471089
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6140,6 +6592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   feedingCam: {fileID: 1414328477}
+  planetParent: {fileID: 0}
   planetEaterTarget: {fileID: 151331562}
   feedToPECurve:
     serializedVersion: 2
@@ -6477,6 +6930,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &803249967
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6754,6 +7232,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &825376711
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6932,6 +7435,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &849428188
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7758,6 +8286,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &997343624
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13146,6 +13699,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1054758174
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18201,6 +18779,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1121557977
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18536,6 +19139,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1147246594
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18652,6 +19280,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1149357271
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18999,6 +19652,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1191142023
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19387,6 +20065,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1231845682
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19608,6 +20311,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1262660672
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19724,6 +20452,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1268417906
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20096,6 +20849,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1308385811
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20212,6 +20990,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1336109621
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21323,6 +22126,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1421299762
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27297,6 +28125,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1547787104
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27590,6 +28443,8 @@ MonoBehaviour:
     type: 3}
   hitMiss: {fileID: 203875140}
   hitWeakPoint: {fileID: 61710629}
+  hitImpact1: {fileID: 8300000, guid: 9bb9290ee0aae394fb2baf357bb41c40, type: 3}
+  hitImpact2: {fileID: 8300000, guid: 0e80c00a307ca32469050318cc2bf90b, type: 3}
   hitsurf: 0
   hitweakPoint: 0
 --- !u!114 &1576169166
@@ -27725,6 +28580,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1596253191
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32727,6 +33607,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1631640883
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33341,6 +34246,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1674802125
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33457,6 +34387,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1683966563
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33610,6 +34565,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1688691731
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33757,6 +34737,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1694829556
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33964,6 +34969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   feedingCam: {fileID: 1414328477}
+  planetParent: {fileID: 0}
   planetEaterTarget: {fileID: 151331562}
   feedToPECurve:
     serializedVersion: 2
@@ -34204,6 +35210,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1742912367
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34689,6 +35720,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1794841040
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34948,6 +36004,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1829559712
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -35565,6 +36646,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1885072058
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -36585,6 +37691,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &1977599507
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -36899,6 +38030,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &2026344486
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37141,6 +38297,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &2036223044
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37404,6 +38585,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &2065255479
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37684,6 +38890,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &2086535305
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37956,6 +39187,31 @@ MonoBehaviour:
   launchSpeed: 10
   instatiateUpVector: 0
   projectileLifeTime: 6
+  scaleDownCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleDownTime: 1
 --- !u!136 &2135216575
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -43346,6 +44602,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 61710629, guid: dc533265eabb30e40bacd054edd68963, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ef564e6c3865a7d42887b667b3db7f33, type: 3}
     - target: {fileID: 6696955553672069718, guid: dc533265eabb30e40bacd054edd68963,
         type: 3}
       propertyPath: m_LocalPosition.x

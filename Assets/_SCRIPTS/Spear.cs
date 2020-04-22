@@ -73,6 +73,7 @@ public class Spear : MonoBehaviour
 
     public GameObject impactVFXPrefab, weakPointVFXPrefab;
     public AudioSource hitMiss, hitWeakPoint;
+    public AudioClip hitImpact1, hitImpact2;
     public bool hitsurf = false, hitweakPoint = false;
     Collision cacheCollisionSurf;
     Collision cacheCollisionWeakPt;
@@ -96,7 +97,7 @@ public class Spear : MonoBehaviour
             vfx.transform.up = normal;
             other.gameObject.GetComponent<PlanetHeart>().FeedToPlanetEater();
             other.gameObject.GetComponent<PlanetHeart>().planetParent.KillThePlanet();
-            
+            PlayerControllerController.instance.BeginFreeRoam();
             hitWeakPoint.PlayOneShot(hitWeakPoint.clip);
             hitMiss.PlayOneShot(hitMiss.clip);
         }
@@ -129,7 +130,9 @@ public class Spear : MonoBehaviour
             rb.velocity = Vector3.zero;
             rb.isKinematic = true;
             transform.SetParent(cacheCollisionWeakPt.transform);
-            hitWeakPoint.PlayOneShot(hitWeakPoint.clip);
+            hitWeakPoint.PlayOneShot(hitImpact1);
+            hitWeakPoint.PlayOneShot(hitImpact2);
+            hitWeakPoint.PlayDelayed(.7f);
         }
         else if (hitsurf) {
         Vector3 normal = cacheCollisionNormal;
