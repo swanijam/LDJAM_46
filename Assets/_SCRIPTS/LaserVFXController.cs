@@ -7,7 +7,8 @@ public class LaserVFXController : MonoBehaviour
     [Header("Elements")]
     public Transform beamParent;
     public Transform chargeSphere;
-    public Material dishMaterial;
+    // public Material dishMaterial;
+    public MeshRenderer dish;
     public GameObject particleSystems;
     public ParticleSystem systemParent;
     
@@ -48,7 +49,7 @@ public class LaserVFXController : MonoBehaviour
 
     public IEnumerator ChargeRoutine()
     {
-        dishMaterial.SetFloat("_OuterRadius", 0);
+        dish.materials[0].SetFloat("_OuterRadius", 0);
         float animTime = 0;
         while(animTime <= 1)
         {
@@ -65,7 +66,7 @@ public class LaserVFXController : MonoBehaviour
         while(animTime <= 1)
         {
             animTime += Time.deltaTime/beamAnimLength;
-            dishMaterial.SetFloat("_OuterRadius", dishAnimCurve.Evaluate(animTime));
+            dish.materials[0].SetFloat("_OuterRadius", dishAnimCurve.Evaluate(animTime));
             float newScaleVal = Mathf.Lerp(0, fullBeamWidth, beamAnimCurve.Evaluate(animTime));
             beamParent.localScale = new Vector3(newScaleVal, newScaleVal, 1);
             yield return null;
