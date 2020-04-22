@@ -137,6 +137,7 @@ public class PlayerControllerController : MonoBehaviour
     public void TakeDamage() {
         if (invincible) return;
         healthbar.health--;
+        orbitController.bunnyAnimator.SetTrigger("hurt");
         if (healthbar.health <= 0) {
             StartCoroutine(_TakeDamage());
         }

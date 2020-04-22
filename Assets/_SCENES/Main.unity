@@ -188,7 +188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8272749}
-  m_LocalRotation: {x: 0.035412014, y: 0.63022125, z: -0.02791378, w: 0.7751052}
+  m_LocalRotation: {x: 0.035412006, y: 0.6302212, z: -0.027913773, w: 0.7751052}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7924,10 +7924,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireballProjectile
       objectReference: {fileID: 0}
+    - target: {fileID: 1709102816361744569, guid: 05cbe7562558dc143a7f05223b2e5a2e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1709102816361744570, guid: 05cbe7562558dc143a7f05223b2e5a2e,
         type: 3}
       propertyPath: scaleUpTime
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709102816361744571, guid: 05cbe7562558dc143a7f05223b2e5a2e,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.33
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05cbe7562558dc143a7f05223b2e5a2e, type: 3}
@@ -15665,6 +15675,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.5490003
       objectReference: {fileID: 0}
+    - target: {fileID: -115713112329962507, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -115713112329962507, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -115713112329962507, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -81903129188616182, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -15699,6 +15724,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 39.183002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989599386052589306, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.4252564
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989599386052589306, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.47170523
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989599386052589306, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5737075
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989599386052589306, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.51721454
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989599386052589306, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989599386052589306, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989599386052589306, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6638717434168464047, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
@@ -15866,6 +15926,41 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8001095346542410894, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8978471295639124041, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.09697998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8978471295639124041, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.051512532
+      objectReference: {fileID: 0}
+    - target: {fileID: 8978471295639124041, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0050261444
+      objectReference: {fileID: 0}
+    - target: {fileID: 8978471295639124041, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9939397
+      objectReference: {fileID: 0}
+    - target: {fileID: 8978471295639124041, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8978471295639124041, guid: 42ec8c519108c19478d98c6cefe23e22,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8978471295639124041, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
@@ -21410,7 +21505,7 @@ GameObject:
   - component: {fileID: 1528074234}
   - component: {fileID: 1528074237}
   - component: {fileID: 1528074236}
-  - component: {fileID: 1528074238}
+  - component: {fileID: 1528074239}
   m_Layer: 11
   m_Name: Player
   m_TagString: Untagged
@@ -21555,7 +21650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cee3c8980a62945bccb7ce24e61885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMaxHealth: 500
+  playerMaxHealth: 5
   d_iPlanet: {fileID: 0}
   orbitController: {fileID: 1528074234}
   orbitCam: {fileID: 1697773921}
@@ -21564,7 +21659,7 @@ MonoBehaviour:
   ejectAttack: 1
   ejectSustain: 0
   ejectDecay: 1.3
-  freeRoamCollider: {fileID: 1528074238}
+  freeRoamCollider: {fileID: 1528074239}
   looker: {fileID: 1647253068}
   diveController: {fileID: 1528074237}
   diveCamBridge: {fileID: 688991922}
@@ -21851,8 +21946,8 @@ MonoBehaviour:
   maxSpeed: 2
   forwardScale: 10
   verticalScale: 0.5
---- !u!135 &1528074238
-SphereCollider:
+--- !u!65 &1528074239
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21862,8 +21957,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.92
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.95, y: 1.45, z: 0.97}
+  m_Center: {x: -0.03, y: 0, z: 0}
 --- !u!1001 &1537956865
 PrefabInstance:
   m_ObjectHideFlags: 0
