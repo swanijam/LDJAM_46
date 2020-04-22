@@ -6,6 +6,7 @@ using Cinemachine;
 public class PlanetHeart : MonoBehaviour
 {
     public CinemachineVirtualCamera feedingCam;
+    public Planet planetParent;
     public Transform planetEaterTarget;
     public void FeedToPlanetEater() {
         GetComponent<Collider>().enabled = false;

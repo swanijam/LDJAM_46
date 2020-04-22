@@ -45,6 +45,7 @@ public class Planet : MonoBehaviour
     }
     public void SpawnHeart() {
         Heart.SetActive(true);
+        Heart.GetComponent<PlanetHeart>().planetParent = this;
     }
     public void HeartVulnerable() {
         Heart.GetComponent<Collider>().enabled = true;
@@ -85,6 +86,10 @@ public class Planet : MonoBehaviour
         if (health <= 0 && onHealthZero != null) onHealthZero();
         StopAllCoroutines();
         StartCoroutine(Flinch());
+    }
+
+    public void KillThePlanet() {
+        GameObject.Destroy(this);
     }
 
     public void SetLaunchersEnabled(bool _enabled) {

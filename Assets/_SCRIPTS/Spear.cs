@@ -95,6 +95,8 @@ public class Spear : MonoBehaviour
             GameObject vfx = Instantiate(weakPointVFXPrefab, other.GetContact(0).point + normal, Quaternion.LookRotation(normal));
             vfx.transform.up = normal;
             other.gameObject.GetComponent<PlanetHeart>().FeedToPlanetEater();
+            other.gameObject.GetComponent<PlanetHeart>().planetParent.KillThePlanet();
+            
             hitWeakPoint.PlayOneShot(hitWeakPoint.clip);
             hitMiss.PlayOneShot(hitMiss.clip);
         }
@@ -136,5 +138,6 @@ public class Spear : MonoBehaviour
             vfx.transform.up = normal;
             hitMiss.PlayOneShot(hitMiss.clip);
         }
+        if (hitweakPoint || hitsurf) GetComponent<Collider>().enabled = false;
     }
 }

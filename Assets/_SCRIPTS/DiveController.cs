@@ -17,6 +17,7 @@ public class DiveController : MonoBehaviour
     public Vector2 shakeAmplitudeRange;
     public Vector2 shakeFreqRange;
     public CinemachineVirtualCamera diveCam;
+    public CinemachineVirtualCamera planetEaterCam;
     public float ejectDrag = 1f;
     public GameObject lance;
     public AudioSource ambientSpace;
@@ -131,6 +132,8 @@ public class DiveController : MonoBehaviour
         // planet eater happy emote
         yield return new WaitForSeconds(exitTime);
         // return camera to player
+        curPlanet.HeartVulnerable();
+        planetEaterCam.m_LookAt = curPlanet.Heart.transform;
         afterExit.Invoke();
         rb.drag = 5f;
     }

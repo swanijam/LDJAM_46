@@ -5,6 +5,19 @@ using Cinemachine;
 
 public class PlayerControllerController : MonoBehaviour
 {
+    public static PlayerControllerController _instance;
+    public static PlayerControllerController instance {
+        get {
+           return _instance;
+        }
+        set {
+           if (_instance != null) {
+               Debug.LogError("second singleton playercontrollercontroller instance found. Deleting the oldest one.");
+               GameObject.Destroy(_instance);
+           }
+           _instance = value;
+        }
+    }
     public int playerMaxHealth = 5;
     public Planet d_iPlanet;
     public FightOrbitController orbitController;
@@ -97,6 +110,7 @@ public class PlayerControllerController : MonoBehaviour
 
     IEnumerator _BeginDescent() {
         diveCam.m_Lens.FieldOfView = diveController.fovMax;
+        diveCam.m_LookAt = orbitController.curTargetPlanet;
         freeRoamCollider.enabled = false;
         farCam.gameObject.SetActive(false);
         yield return new WaitForSeconds(1.3f);
