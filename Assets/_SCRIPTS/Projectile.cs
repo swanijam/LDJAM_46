@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (layerMask == (layerMask | (1 << other.gameObject.layer))) {
+            Debug.Log("damaging??");
             other.gameObject.GetComponent<PlayerControllerController>().TakeDamage();
             // parentPlanet.StopAttacking();
         }
