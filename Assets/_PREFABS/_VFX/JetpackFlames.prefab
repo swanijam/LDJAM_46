@@ -115,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -222,7 +222,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.7176471}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -284,8 +284,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 3.4
-      minScalar: 1.6
+      scalar: 9
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -983,14 +983,14 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 3.900272
-          outSlope: 3.900272
+          inSlope: 6.925133
+          outSlope: 6.925133
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
-          outWeight: 0.13559473
+          outWeight: 0.30732906
         - serializedVersion: 3
-          time: 0.49674356
+          time: 0.26340616
           value: 1
           inSlope: 0.27158147
           outSlope: 0.27158147
@@ -1313,7 +1313,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 0.45595357, g: 0.41037738, b: 1, a: 1}
+        key1: {r: 0.41176474, g: 0.5340858, b: 1, a: 0.13725491}
         key2: {r: 0.7892363, g: 0.76778823, b: 0.85882354, a: 0}
         key3: {r: 1, g: 0.76600003, b: 0.76783526, a: 0}
         key4: {r: 1, g: 1, b: 1, a: 0}
@@ -4817,7 +4817,7 @@ Transform:
   m_GameObject: {fileID: 5977473142534469713}
   m_LocalRotation: {x: -0.91316485, y: 0.086433254, z: -0.30859753, w: 0.25184682}
   m_LocalPosition: {x: 0.332, y: 0.567, z: -0.797}
-  m_LocalScale: {x: 0.025202183, y: 0.02520218, z: 0.025202189}
+  m_LocalScale: {x: 0.030406436, y: 0.03040643, z: 0.030406442}
   m_Children:
   - {fileID: 5458899145048695216}
   m_Father: {fileID: 0}
