@@ -49,6 +49,22 @@ public class PlayerControllerController : MonoBehaviour
         // BeginOrbitCombat(d_iPlanet);
         healthbar.varRange.y = playerMaxHealth;
         healthbar.health = playerMaxHealth;
+        // freeWeight = freeRoamController.flightAnimator.GetLayerWeight(1);6
+    }
+
+    float freeWeight = 0f, freeWeightVelocity = 0f, freeWeightSmoothTime = .3f, freeWeightMaxSpeed = 1f;
+    float freeWeightTarget = 1f;
+    float orbitWeight = 0f, orbitWeightVelocity = 0f, orbitWeightSmoothTime = .3f, orbitWeightMaxSpeed = 1f;
+    float orbitWeightTarget = 1f;
+    private void Update()
+    {
+        freeWeightTarget = freeRoamController.enabled ? 1f : 0f;
+        freeWeight = Mathf.SmoothDamp(freeWeight, freeWeightTarget, ref freeWeightVelocity, freeWeightSmoothTime, freeWeightMaxSpeed);
+        freeRoamController.flightAnimator.SetLayerWeight(1, freeWeight);
+
+        orbitWeightTarget = orbitController.enabled ? 1f : 0f;
+        orbitWeight = Mathf.SmoothDamp(orbitWeight, orbitWeightTarget, ref orbitWeightVelocity, orbitWeightSmoothTime, orbitWeightMaxSpeed);
+        freeRoamController.flightAnimator.SetLayerWeight(2, orbitWeight);
     }
 
     public void BeginOrbitCombat(Planet p) {

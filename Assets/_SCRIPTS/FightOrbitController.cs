@@ -23,7 +23,7 @@ public class FightOrbitController : MonoBehaviour
     [HideInInspector]
     public bool inputEnabled;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
@@ -31,6 +31,10 @@ public class FightOrbitController : MonoBehaviour
         curTargetPlanet = _planet.transform;
         planet = _planet;
         SPEAR.Ready();
+        ffx = 0f;
+        ffy = 0f;
+        ffxVelocity = 0f;
+        ffyVelocity = 0f;
     }
 
     public float accelPerSec = 5f;
@@ -84,22 +88,19 @@ public class FightOrbitController : MonoBehaviour
         } else if (Vector3.Distance(transform.position, curTargetPlanet.position) < orbitRadius - orbitSoftWidth) {
             rb.velocity += -orbitCorrectForce * (curTargetPlanet.position - transform.position) * Time.deltaTime;
         }
-        // if (!dashReady) {
-        //     dashCooldown += Time.deltaTime;
-        //     if (dashCooldown > dodgeCooldown) dashReady = true;
-        // }
-        //     Debug.Log("DASHING");
-        //     dashReady = false;
-        //     dashCooldown = 0f;
-        //     dashing = true;
-        //     _dashTime = 0f;
-        //     rb.velocity = inputDirection * dodgeForce;
-        // }
-        // } else {
-        //     _dashTime += Time.deltaTime;
-        //     if (_dashTime > dashTime) dashing = false;
-        // }
+
+        Vector3 XYvelocity = Vector3.ProjectOnPlane(looker.transform.InverseTransformDirection(rb.velocity), looker.transform.forward);
+        XYvelocity = XYvelocity.normalized * (Mathf.Min(XYvelocity.magnitude, 1f));
+        ffx = Mathf.SmoothDamp(ffx, XYvelocity.x, ref ffxVelocity, ffxSmoothTime, ffxMaxSpeed);
+        ffy = Mathf.SmoothDamp(ffy, XYvelocity.y, ref ffyVelocity, ffySmoothTime, ffyMaxSpeed);
+        bunnyAnimator.SetFloat("flyX", ffx);
+        bunnyAnimator.SetFloat("flyY", ffy);
     }
+    // smoothdamping blend tree axes
+    float ffx = 0f, ffxVelocity = 0f, ffxSmoothTime = .1f, ffxMaxSpeed = 5f;
+    // float ffxTarget = 1f;
+    float ffy = 0f, ffyVelocity = 0f, ffySmoothTime = .1f, ffyMaxSpeed = 5f;
+    // float ffyTarget = 1f;
 
         public AnimationCurve animateFOVCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
         public float animateFOVTime = .25f;
