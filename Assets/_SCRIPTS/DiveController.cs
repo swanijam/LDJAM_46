@@ -18,6 +18,7 @@ public class DiveController : MonoBehaviour
     public Vector2 shakeFreqRange;
     public CinemachineVirtualCamera diveCam;
     public CinemachineVirtualCamera planetEaterCam;
+    public Animator bunnyAnimator;
     public float ejectDrag = 1f;
     public GameObject lance;
     public AudioSource ambientSpace;
@@ -108,6 +109,8 @@ public class DiveController : MonoBehaviour
         yield return new WaitForSeconds(blackTime);
 
         lance.gameObject.SetActive(false);    
+        bunnyAnimator.SetBool("lance", false);
+        
         // drill time
         activateDrill.Invoke();
         yield return new WaitForSeconds(drillTime);

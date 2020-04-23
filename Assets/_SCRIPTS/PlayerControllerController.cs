@@ -68,7 +68,7 @@ public class PlayerControllerController : MonoBehaviour
     }
 
     public void BeginOrbitCombat(Planet p) {
-        Debug.Log("Beginning Orbit Combat");
+        // Debug.Log("Beginning Orbit Combat");
         orbitAmbient.GetComponent<FadeVolume>().FadeToMax();
         if (orbitController.enabled == true) return; // for redundant planet collisions
         freeRoamCollider.enabled = false;
@@ -133,11 +133,12 @@ public class PlayerControllerController : MonoBehaviour
         diveCam.m_LookAt = orbitController.curTargetPlanet;
         freeRoamCollider.enabled = false;
         farCam.gameObject.SetActive(false);
+        orbitController.SPEAR.gameObject.GetComponent<ScaleFader>().FadeToMin();
         yield return new WaitForSeconds(1.3f);
         orbitController.enabled = false;
         freeRoamController.enabled = false;
 
-        orbitController.SPEAR.gameObject.GetComponent<ScaleFader>().FadeToMin();
+        orbitController.bunnyAnimator.SetBool("lance", true);
         diveController.lance.gameObject.SetActive(true);
         
         

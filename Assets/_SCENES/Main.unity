@@ -188,7 +188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8272749}
-  m_LocalRotation: {x: 0.035412006, y: 0.6302212, z: -0.027913773, w: 0.7751052}
+  m_LocalRotation: {x: 0.035412014, y: 0.63022125, z: -0.02791378, w: 0.7751052}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5817,7 +5817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &691295632
 Transform:
   m_ObjectHideFlags: 0
@@ -21732,17 +21732,17 @@ PrefabInstance:
     - target: {fileID: 815592257654740053, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -23.671965
+      value: -84.94646
       objectReference: {fileID: 0}
     - target: {fileID: 815592257654740053, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -246.10927
+      value: -0.97283614
       objectReference: {fileID: 0}
     - target: {fileID: 815592257654740053, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 251.94164
+      value: 0.96906376
       objectReference: {fileID: 0}
     - target: {fileID: 1989599386052589306, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
@@ -21837,17 +21837,17 @@ PrefabInstance:
     - target: {fileID: 6784957568130697592, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 29.219261
+      value: 35.672825
       objectReference: {fileID: 0}
     - target: {fileID: 6784957568130697592, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 79.98742
+      value: 2.5221386
       objectReference: {fileID: 0}
     - target: {fileID: 6784957568130697592, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -21.963682
+      value: 8.879845
       objectReference: {fileID: 0}
     - target: {fileID: 7406599389706210277, guid: 42ec8c519108c19478d98c6cefe23e22,
         type: 3}
@@ -27816,6 +27816,7 @@ MonoBehaviour:
   shakeFreqRange: {x: 0, y: 20}
   diveCam: {fileID: 451389149}
   planetEaterCam: {fileID: 1414328477}
+  bunnyAnimator: {fileID: 423638242}
   ejectDrag: 0.7
   lance: {fileID: 691295631}
   ambientSpace: {fileID: 818509819}
