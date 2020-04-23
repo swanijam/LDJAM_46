@@ -17,7 +17,7 @@ public class Spear : MonoBehaviour
     }
 
     public void Ready() {
-        Debug.Log("ready??");
+        // Debug.Log("ready??");
         StartCoroutine(ReadySpearAnim());
     }
 
@@ -122,7 +122,7 @@ public class Spear : MonoBehaviour
             vfx.transform.up = normal;
             // vfx.transform.up = normal;
             // stick into weak points
-            Debug.Log("HIT WEAK POINT", cacheCollisionWeakPt.gameObject);
+            // Debug.Log("HIT WEAK POINT", cacheCollisionWeakPt.gameObject);
             transform.position = cacheCollisionWeakPt.GetContact(0).point + cacheCollisionWeakPt.GetContact(0).normal * 1f;
             transform.rotation = Quaternion.LookRotation((cacheCollisionWeakPt.GetContact(0).point-transform.position).normalized);
             GetComponent<Collider>().enabled = false;
