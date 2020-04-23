@@ -89,7 +89,7 @@ Material:
     - _SrcBlend: 5
     - _UVSec: 0
     - _ZWrite: 0
-    - _alphaCutoffThreshold: 0.125
+    - _alphaCutoffThreshold: 0
     - _textureBased: 0
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}

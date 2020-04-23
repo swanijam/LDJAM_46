@@ -20,6 +20,12 @@
 		alpha = c.a;
 	}
 
+	void EmissionColor(out fixed3 emission_color, fixed3 albedo, float2 uv)
+	{
+		fixed4 c = tex2D(_EmissionTex, uv);
+		emission_color = c.rgb * _EmissionColor * albedo;
+	}
+
 	//only include initsurface when not meta pass
 	#ifndef MK_TOON_META_PASS
 		/////////////////////////////////////////////////////////////////////////////////////////////
@@ -67,7 +73,7 @@
 			PreCalcParameters(mkts);
 
 			#if _MKTOON_EMISSION
-				mkts.Color_Emission = _EmissionColor * mkts.Color_Albedo;
+				EmissionColor(mkts.Color_Emission, mkts.Color_Albedo, o.uv_Main);
 			#endif
 			mkts.Color_Specular = 1.0;
 			return mkts;
