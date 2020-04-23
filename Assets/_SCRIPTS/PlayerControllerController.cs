@@ -88,6 +88,7 @@ public class PlayerControllerController : MonoBehaviour
         p.onHealthZero += BeginDescent;
         farCam.gameObject.SetActive(false);
         diveCam.gameObject.SetActive(false);
+        diveCamBridge.m_LookAt = p.transform;
         diveCamBridge.gameObject.SetActive(false);
         freeCam.gameObject.SetActive(false);
     }

@@ -85,7 +85,7 @@ public class Planet : MonoBehaviour
         SetLaunchersEnabled(false);
         if (health <= 0 && onHealthZero != null) onHealthZero();
         StopAllCoroutines();
-        StartCoroutine(Flinch());
+        StartCoroutine(Flinch(health<=0));
     }
 
     public void KillThePlanet() {
@@ -99,10 +99,11 @@ public class Planet : MonoBehaviour
     }
 
     public AnimationCurve FlinchCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+    public AnimationCurve LookAtPlayerCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     public float flinchFreeze = 1f;
     public float planetShakeAmplitude = .2f;
     public float FlinchTime = 1.5f;
-    IEnumerator Flinch() {
+    IEnumerator Flinch(bool turnToFacePlayerAfter = false) {
         WaitForEndOfFrame wfeof = new WaitForEndOfFrame();
         cinemachineImpulseSource.GenerateImpulse();
         float currTime = 0f;
@@ -118,7 +119,7 @@ public class Planet : MonoBehaviour
         Quaternion targetOrientation = transform.rotation * Quaternion.AngleAxis(angle, new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)));
         float lerpVal;
         currTime = 0f;
-        float totalTime = angle/30f * FlinchTime;
+        float totalTime = angle/30f * FlinchTime * (turnToFacePlayerAfter?.5f:1f);
         while (currTime < totalTime) {
             currTime += Time.deltaTime;
             lerpVal = FlinchCurve.Evaluate(Mathf.InverseLerp(0f, totalTime, currTime));
@@ -126,6 +127,18 @@ public class Planet : MonoBehaviour
             yield return wfeof;
         }
         if (health > 0 ) StartCoroutine(CombatSpin());
+        if (turnToFacePlayerAfter) {
+            FirePlanet fp = GetComponent<FirePlanet>();
+            if (fp != null) fp.StopFireBreath();
+            irot = transform.rotation;
+            currTime = 0f;
+            while (currTime < 3f) {
+                currTime += Time.deltaTime;
+                lerpVal = LookAtPlayerCurve.Evaluate(Mathf.InverseLerp(0f, 3f, currTime));
+                transform.rotation = Quaternion.Slerp(irot, Quaternion.LookRotation( (player.position-transform.position).normalized, transform.up), lerpVal);
+                yield return wfeof;
+            }
+        }
     }
 
     public delegate void HealthReducedToZero();
@@ -135,11 +148,13 @@ public class Planet : MonoBehaviour
     public event EnterPlanet enterPlanet;
 
     public LayerMask playerLayer;
+    public Transform player;
     private void OnTriggerEnter(Collider other)
     {
         if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
             if (enterPlanet != null) enterPlanet();
             PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
+            player = pcc.transform;
             if (pcc == null) Debug.LogError("not a player", other.gameObject);
             pcc.BeginOrbitCombat(this);
         }

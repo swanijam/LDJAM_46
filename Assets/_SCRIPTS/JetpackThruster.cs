@@ -31,7 +31,8 @@ public class JetpackThruster : MonoBehaviour
         } else {
             firing = false;
         }
-        jet.enableEmission = firing;
+        // jet.enableEmission = firing;
+        jet.enableEmission = true;
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookVector, transform.up), .95f * Time.deltaTime);
         prevPosition = transform.position;
     }
