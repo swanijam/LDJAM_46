@@ -188,7 +188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8272749}
-  m_LocalRotation: {x: 0.035412006, y: 0.6302212, z: -0.027913773, w: 0.7751052}
+  m_LocalRotation: {x: 0.03541201, y: 0.63022125, z: -0.027913779, w: 0.77510524}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -27286,6 +27286,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7272620931648260455, guid: 5e1997f05e2b7e64cb3cc87d340e9a79,
+        type: 3}
+      propertyPath: planetEaterAnimator
+      value: 
+      objectReference: {fileID: 8296172667864325379}
     - target: {fileID: 7272620933325367518, guid: 5e1997f05e2b7e64cb3cc87d340e9a79,
         type: 3}
       propertyPath: m_ClearFlags
@@ -36147,6 +36152,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!95 &8296172667864325379 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4981847006643028627, guid: dca49c8eb8e054e44bd7d18131dfdf04,
+    type: 3}
+  m_PrefabInstance: {fileID: 2050513996834235597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8296172668068761838
 GameObject:
   m_ObjectHideFlags: 0

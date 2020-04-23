@@ -25,6 +25,9 @@ public class FinalStrikeSequenceController : MonoBehaviour
     public float stage2Pause = 3;
     public float stage3Pause = 3;
 
+    [Header("PlanetEater Settings")]
+    public Animator planetEaterAnimator;
+
     public void Start()
     {
         StartCoroutine(SequenceRoutine());
@@ -47,6 +50,8 @@ public class FinalStrikeSequenceController : MonoBehaviour
 
         yield return new WaitForSeconds(stage3Pause);
 
+        planetEaterAnimator.SetBool("OpenMouth", true);
+
         heartObject.gameObject.SetActive(true);
         float animTime = 0;
         while(animTime <= 1)
@@ -56,6 +61,10 @@ public class FinalStrikeSequenceController : MonoBehaviour
             heartObject.localScale = Vector3.Lerp(startTransform.localScale, endTransform.localScale, heartScaleAnimCurve.Evaluate(animTime));
             yield return null;
         }
+
+        planetEaterAnimator.SetBool("OpenMouth", false);
+
+
 
         //load new scene
     }
