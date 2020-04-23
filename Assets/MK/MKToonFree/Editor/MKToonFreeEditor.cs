@@ -73,6 +73,7 @@ namespace MK.Toon
         private MaterialProperty specularColor = null;
 
         //Emission
+        private MaterialProperty emissionTex = null;
         private MaterialProperty emissionColor = null;
 
         private bool showGIField = false;
@@ -122,6 +123,7 @@ namespace MK.Toon
             specularIntensity = FindProperty("_SpecularIntensity", props);
 
             //Emission
+            emissionTex = FindProperty("_EmissionTex", props);
             emissionColor = FindProperty("_EmissionColor", props);
         }
 
@@ -243,6 +245,7 @@ namespace MK.Toon
                 materialEditor.TexturePropertySingleLine(new GUIContent(bumpMap.displayName), bumpMap);
                 EditorGUI.BeginChangeCheck();
                 ColorProperty(emissionColor, false, true, new GUIContent(emissionColor.displayName));
+                materialEditor.TexturePropertySingleLine(new GUIContent(emissionTex.displayName), emissionTex);
                 if (showGIField)
                     materialEditor.LightmapEmissionProperty(MaterialEditor.kMiniTextureFieldLabelIndentLevel + 1);
                 if (EditorGUI.EndChangeCheck())

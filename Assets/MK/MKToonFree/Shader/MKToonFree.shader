@@ -36,6 +36,7 @@
 		_SpecularIntensity("Intensity", Range (0, 1)) = 0.5
 
 		//Emission
+		_EmissionTex ("Emission Texture", 2D) = "white"{}
 		_EmissionColor("Emission Color", Color) = (0,0,0)
 
 		//Editor

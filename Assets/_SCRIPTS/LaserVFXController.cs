@@ -62,17 +62,25 @@ public class LaserVFXController : MonoBehaviour
 
     public IEnumerator FireRoutine()
     {
+
+        
         float animTime = 0;
         while(animTime <= 1)
         {
             animTime += Time.deltaTime/beamAnimLength;
             dish.materials[0].SetFloat("_OuterRadius", dishAnimCurve.Evaluate(animTime));
+            if(dishAnimCurve.Evaluate(animTime) > 0.3f)beamParent.gameObject.SetActive(true);
             float newScaleVal = Mathf.Lerp(0, fullBeamWidth, beamAnimCurve.Evaluate(animTime));
             beamParent.localScale = new Vector3(newScaleVal, newScaleVal, 1);
             yield return null;
         }
         eyeAnimController.SetBool("Laser", false);
+        beamParent.gameObject.SetActive(false);
+
     }
+
+
+
 
     public void ChargeLaser()
     {

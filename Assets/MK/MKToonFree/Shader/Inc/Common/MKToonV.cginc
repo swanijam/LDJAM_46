@@ -52,4 +52,7 @@
 
 	//Emission
 	uniform fixed3 _EmissionColor;
+	uniform sampler2D _EmissionTex;
+	uniform float4 _EmissionTex_ST;
+	
 #endif
