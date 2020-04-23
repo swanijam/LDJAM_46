@@ -27994,6 +27994,7 @@ MonoBehaviour:
   shakeFreqRange: {x: 0, y: 20}
   diveCam: {fileID: 451389149}
   planetEaterCam: {fileID: 1414328477}
+  farCam: {fileID: 252023549}
   bunnyAnimator: {fileID: 423638242}
   ejectDrag: 0.7
   lance: {fileID: 691295631}

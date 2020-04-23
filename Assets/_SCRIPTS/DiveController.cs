@@ -18,6 +18,7 @@ public class DiveController : MonoBehaviour
     public Vector2 shakeFreqRange;
     public CinemachineVirtualCamera diveCam;
     public CinemachineVirtualCamera planetEaterCam;
+    public CinemachineVirtualCamera farCam;
     public Animator bunnyAnimator;
     public float ejectDrag = 1f;
     public GameObject lance;
@@ -115,6 +116,7 @@ public class DiveController : MonoBehaviour
         activateDrill.Invoke();
         yield return new WaitForSeconds(drillTime);
 
+        farCam.transform.position = curPlanet.transform.position + curPlanet.transform.right * 50f + curPlanet.transform.up * 15f;
         // white time
         activateWhite.Invoke();
         yield return new WaitForSeconds(whiteTime);

@@ -128,6 +128,8 @@ public class Planet : MonoBehaviour
         }
         if (health > 0 ) StartCoroutine(CombatSpin());
         if (turnToFacePlayerAfter) {
+            FirePlanet fp = GetComponent<FirePlanet>();
+            if (fp != null) fp.StopFireBreath();
             irot = transform.rotation;
             currTime = 0f;
             while (currTime < 3f) {
