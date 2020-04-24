@@ -132,7 +132,7 @@ public class Spear : MonoBehaviour
             transform.SetParent(cacheCollisionWeakPt.transform);
             hitWeakPoint.PlayOneShot(hitImpact1);
             hitWeakPoint.PlayOneShot(hitImpact2);
-            hitWeakPoint.PlayDelayed(.7f);
+            hitWeakPoint.PlayDelayed(1f);
         }
         else if (hitsurf) {
         Vector3 normal = cacheCollisionNormal;

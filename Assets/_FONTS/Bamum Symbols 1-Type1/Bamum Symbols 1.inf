@@ -1,0 +1,23 @@
+FontName (BamumSymbols1)
+FullName (Bamum Symbols 1)
+FamilyName (Bamum Symbols 1)
+Version (001.000)
+isFixedPitch false
+CharacterSet (custom)
+Encoding (SpecificEncoding)
+Pi true
+ItalicAngle 0
+CapHeight 1060
+UnderlinePosition -125
+UnderlineThickness 50
+StemWidth 50
+Serif false
+AppleName (Bamum Symbols 1)
+MSMenuName (Bamum Symbols 1)
+VPMenuName (Bamum Symbols 1)
+WORDMenuName (Bamum Symbols 1)
+AppleFONDID 128
+VPStyle (N)
+WindowsCharSet 2
+WindowsFirstChar 32
+WindowsLastChar 255
