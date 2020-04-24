@@ -63,9 +63,13 @@ public class FinalStrikeSequenceController : MonoBehaviour
         }
 
         planetEaterAnimator.SetBool("OpenMouth", false);
+        ResetHeart();
+    }
 
-
-
-        //load new scene
+    public void ResetHeart()
+    {
+        heartObject.position = startTransform.position;
+        heartObject.localScale = startTransform.localScale;
+        heartObject.gameObject.SetActive(false);
     }
 }
