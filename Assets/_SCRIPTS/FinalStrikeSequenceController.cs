@@ -35,6 +35,7 @@ public class FinalStrikeSequenceController : MonoBehaviour
 
     public IEnumerator SequenceRoutine()
     {
+        heartObject.gameObject.SetActive(false);
         virtualCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = startAmplitude;
         virtualCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = startFrequency;
 
@@ -50,9 +51,9 @@ public class FinalStrikeSequenceController : MonoBehaviour
 
         yield return new WaitForSeconds(stage3Pause);
 
-        planetEaterAnimator.SetBool("OpenMouth", true);
 
         heartObject.gameObject.SetActive(true);
+        // heartObject.transform.position = startTransform.position;
         float animTime = 0;
         while(animTime <= 1)
         {

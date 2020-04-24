@@ -89,7 +89,7 @@ public class Planet : MonoBehaviour
     }
 
     public void KillThePlanet() {
-        GameObject.Destroy(this);
+        GameObject.Destroy(this.gameObject);
     }
 
     public void SetLaunchersEnabled(bool _enabled) {
