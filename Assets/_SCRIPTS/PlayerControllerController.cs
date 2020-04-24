@@ -135,12 +135,13 @@ public class PlayerControllerController : MonoBehaviour
         freeRoamCollider.enabled = false;
         farCam.gameObject.SetActive(false);
         orbitController.SPEAR.gameObject.GetComponent<ScaleFader>().FadeToMin();
-        yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSeconds(1f);
         orbitController.enabled = false;
         freeRoamController.enabled = false;
 
         orbitController.bunnyAnimator.SetBool("lance", true);
         diveController.lance.gameObject.SetActive(true);
+        // summonLanceSound.Play();
         
         
         orbitCam.gameObject.SetActive(false);

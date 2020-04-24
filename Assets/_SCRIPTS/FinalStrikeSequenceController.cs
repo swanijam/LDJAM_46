@@ -28,7 +28,7 @@ public class FinalStrikeSequenceController : MonoBehaviour
     [Header("PlanetEater Settings")]
     public Animator planetEaterAnimator;
 
-    public void Start()
+    public void OnEnable()
     {
         StartCoroutine(SequenceRoutine());
     }
@@ -62,13 +62,14 @@ public class FinalStrikeSequenceController : MonoBehaviour
             heartObject.localScale = Vector3.Lerp(startTransform.localScale, endTransform.localScale, heartScaleAnimCurve.Evaluate(animTime));
             yield return null;
         }
-
+        Debug.Log("ended the anim thing");
         planetEaterAnimator.SetBool("OpenMouth", false);
         ResetHeart();
     }
 
     public void ResetHeart()
     {
+        Debug.Log("reset the heart");
         heartObject.position = startTransform.position;
         heartObject.localScale = startTransform.localScale;
         heartObject.gameObject.SetActive(false);
