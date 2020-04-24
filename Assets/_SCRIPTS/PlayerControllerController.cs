@@ -141,6 +141,7 @@ public class PlayerControllerController : MonoBehaviour
 
         orbitController.bunnyAnimator.SetBool("lance", true);
         diveController.lance.gameObject.SetActive(true);
+        // summonLanceSound.Play();
         
         
         orbitCam.gameObject.SetActive(false);

@@ -50,9 +50,10 @@ public class MainMenuController : MonoBehaviour
         while(animTime <= 1)
         {
             animTime += Time.deltaTime/planetEaterLerpAnimLength;
-            planetEaterTransform.position = Vector3.Lerp(startTransform.position, endTransform.position, planetEaterLerpAnimCurve.Evaluate(animTime));
+            float lerpVal = planetEaterLerpAnimCurve.Evaluate(animTime);
+            planetEaterTransform.position = Vector3.Lerp(startTransform.position, endTransform.position, lerpVal);
             yield return null;
-            if(animTime >= eatAnimStartTime && !heEatedAlready)
+            if(lerpVal >= eatAnimStartTime && !heEatedAlready)
             {
                 Debug.Log("Play Eat Anim");
                 planetEaterAnimator.SetTrigger("EatTitle");
