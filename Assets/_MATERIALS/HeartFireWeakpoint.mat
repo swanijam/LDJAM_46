@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HeartMatWeakpoint
+  m_Name: HeartFireWeakpoint
   m_Shader: {fileID: 4800000, guid: 4e9649589f7cf7947bfa4daf3b81400e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -91,9 +91,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _AmbientColor: {r: 17.684067, g: 0, b: 0, a: 1}
+    - _AmbientColor: {r: 1, g: 1, b: 1, a: 1}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.9607843, g: 0, b: 0.043137327, a: 1}
+    - _Color: {r: 0.9607843, g: 0.43916893, b: 0, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}

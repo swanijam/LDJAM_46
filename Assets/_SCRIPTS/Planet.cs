@@ -6,6 +6,7 @@ public class Planet : MonoBehaviour
     public int health = 3;
     public Cinemachine.CinemachineImpulseSource cinemachineImpulseSource;
     public PeriodicallyAttack[] plos;
+    public PlanetGesture planetGesture;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -89,6 +90,7 @@ public class Planet : MonoBehaviour
     }
 
     public void KillThePlanet() {
+        planetGesture.StopAllCoroutines();
         GameObject.Destroy(this.gameObject);
     }
 
