@@ -32,7 +32,7 @@ public class PlanetHeart : MonoBehaviour
             currTime += Time.deltaTime;
             lerpVal = feedToPECurve.Evaluate(Mathf.InverseLerp(0f, feedToPETime, currTime));
             transform.position = Vector3.LerpUnclamped(iPos, planetEaterTarget.position, lerpVal*.95f);
-            peater.rotation = Quaternion.Lerp(irot, Quaternion.LookRotation((transform.position-peater.position).normalized, transform.up), lerpVal);
+            peater.rotation = Quaternion.Lerp(irot, Quaternion.LookRotation((transform.position-peater.position).normalized, Vector3.up), lerpVal);
             yield return wfeof;
         }
         planetEaterAnimator.SetBool("OpenMouth", false);
