@@ -3,7 +3,52 @@ guid: 7089c9e6b3102da4dbe7d1275fd79adc
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DarkPinkThruster
+    second: {fileID: 2100000, guid: 2794f0c1b2d0b2845aa49a5212f0950b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetpackBodyDark
+    second: {fileID: 2100000, guid: 3bd208b73ecc4954f8d0382416e0f8d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetpackBodyLight
+    second: {fileID: 2100000, guid: cf551f544ef6a294fbc2a2c2dd6ebfca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetpackBodyMid
+    second: {fileID: 2100000, guid: 7409ab0414d858e4b8bfed622faf9f12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetpackScreen
+    second: {fileID: 2100000, guid: 446dc2e934afbdd4dbcc53d84c4b4914, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetpackScreenBorder
+    second: {fileID: 2100000, guid: e9f4b71ffbfee004585c4a5736abeb4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jetpack_FuelGaugeglass
+    second: {fileID: 2100000, guid: 1c4a3b368a33e8f4ab0d716ca2c9bafe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LightPinkThruster
+    second: {fileID: 2100000, guid: d12573ae792b0cf4ebf9dc3c7c78e208, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LiquidFuel
+    second: {fileID: 2100000, guid: e8f2e02d1739b3e47961cdded4742bbb, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
