@@ -54,4 +54,10 @@ public class PlanetGesture : MonoBehaviour
             yield return null;
         }
     }
+
+
+    void OnDestroy()
+    {
+        StopAllCoroutines();
+    }
 }

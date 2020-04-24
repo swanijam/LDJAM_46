@@ -8160,6 +8160,7 @@ MonoBehaviour:
   health: 3
   cinemachineImpulseSource: {fileID: 3532881193407103536}
   plos: []
+  planetGesture: {fileID: 2007221371115489836}
   idleSpinSmoothTime: 2
   idleSpinMaxSpeed: 30
   curTargetIdleSpin: 30
@@ -20048,25 +20049,10 @@ PrefabInstance:
       propertyPath: myplanet
       value: 
       objectReference: {fileID: 3532881193215667983}
-    - target: {fileID: 865192081901116770, guid: b495c738fbd1ea4469aa313675a64087,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ed4d38c7988391d4085b9aabd25d48c1, type: 2}
-    - target: {fileID: 865192081901116770, guid: b495c738fbd1ea4469aa313675a64087,
-        type: 3}
-      propertyPath: m_BlendShapeWeights.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1715413347806393924, guid: b495c738fbd1ea4469aa313675a64087,
         type: 3}
       propertyPath: m_Name
       value: HeartWeakPoint (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1715413347806393924, guid: b495c738fbd1ea4469aa313675a64087,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2419847526059361367, guid: b495c738fbd1ea4469aa313675a64087,
         type: 3}
