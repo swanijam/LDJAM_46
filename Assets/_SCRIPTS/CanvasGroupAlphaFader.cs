@@ -17,9 +17,9 @@ public class CanvasGroupAlphaFader : MonoBehaviour
                 }
             }
         
-        public Vector2 varRange = Vector2.up; 
         public float time = 1f;
-        public AnimationCurve curve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+        public AnimationCurve curve;
+        public CursorLock cursorLock;
 
         private void Update()
         {
@@ -43,10 +43,12 @@ public class CanvasGroupAlphaFader : MonoBehaviour
     
         private IEnumerator _FadeToMax(CanvasGroup r) {
             float currTime = 0f;
+            r.interactable = true;
+            r.blocksRaycasts = true;
+            cursorLock.enabled = false;
             while (currTime < time) {
                 currTime += Time.unscaledDeltaTime;
                 float lerpVal = curve.Evaluate(Mathf.InverseLerp(0f, time, currTime));
-                //r.material.SetFloat(propertyName, Mathf.Lerp(varRange.x, varRange.y, lerpVal));
                 canvasGroup.alpha = lerpVal;
                 yield return new WaitForEndOfFrame();
             }
@@ -60,10 +62,12 @@ public class CanvasGroupAlphaFader : MonoBehaviour
         }
         private IEnumerator _FadeToMin(CanvasGroup r) {
             float currTime = 0f;
+            r.interactable = false;
+            r.blocksRaycasts = false;
+            cursorLock.enabled = true;
             while (currTime < time) {
                 currTime += Time.unscaledDeltaTime;
                 float lerpVal = curve.Evaluate(Mathf.InverseLerp(0f, time, currTime));
-                //r.material.SetFloat(propertyName, Mathf.Lerp(varRange.y, varRange.x, lerpVal));
                 canvasGroup.alpha = 1f-lerpVal;
                 yield return new WaitForEndOfFrame();
             }
