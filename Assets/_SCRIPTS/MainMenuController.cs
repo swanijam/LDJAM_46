@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MainMenuController : MonoBehaviour
 {
     [Header("UI Elements")]
+    public Canvas uiCanvas;
     public Button startButton;
     public Button controlsButton;
     public Button quitButton;
@@ -27,13 +28,14 @@ public class MainMenuController : MonoBehaviour
     [Header("Other Elements")]
     public CursorLock cursorLock;
 
+    public static bool gameStarted = false;
     private bool heEatedAlready = false;
 
     private void Awake() 
     {
         UIGroup.SetActive(true);
         startButton.onClick.AddListener(StartGame);
-        startButton.onClick.AddListener(QuitGame);
+        quitButton.onClick.AddListener(QuitGame);
     }
 
     public void StartGame()
@@ -64,6 +66,8 @@ public class MainMenuController : MonoBehaviour
         }
         gameCamera.SetActive(true);
         startCamera.SetActive(false);
+        uiCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        gameStarted = true;
     }
 
     public void QuitGame()

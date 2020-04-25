@@ -26,19 +26,19 @@ public class CanvasGroupAlphaFader : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape)) {
                 if (canvasGroup.alpha > .5f) {
                     FadeToMin();
-                    Time.timeScale = 1f;
                 } else {
                     FadeToMax();
-                    Time.timeScale = 0f;
                 }
             }
         }
     
         public void FadeToMax () {
             StartCoroutine(_FadeToMax(canvasGroup));
+            Time.timeScale = 1f;
         }
         public void FadeCanvasGroupToMax (CanvasGroup _r) {
             StartCoroutine(_FadeToMax(_r));
+            Time.timeScale = 0f;
         }
     
         private IEnumerator _FadeToMax(CanvasGroup r) {
@@ -46,6 +46,11 @@ public class CanvasGroupAlphaFader : MonoBehaviour
             r.interactable = true;
             r.blocksRaycasts = true;
             cursorLock.enabled = false;
+            if(MainMenuController.gameStarted)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
             while (currTime < time) {
                 currTime += Time.unscaledDeltaTime;
                 float lerpVal = curve.Evaluate(Mathf.InverseLerp(0f, time, currTime));
@@ -64,7 +69,10 @@ public class CanvasGroupAlphaFader : MonoBehaviour
             float currTime = 0f;
             r.interactable = false;
             r.blocksRaycasts = false;
-            cursorLock.enabled = true;
+            if(MainMenuController.gameStarted)
+            {
+                cursorLock.enabled = true;
+            }
             while (currTime < time) {
                 currTime += Time.unscaledDeltaTime;
                 float lerpVal = curve.Evaluate(Mathf.InverseLerp(0f, time, currTime));
