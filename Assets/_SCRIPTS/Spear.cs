@@ -8,6 +8,7 @@ public class Spear : MonoBehaviour
     Vector3 fullSpearScale; 
     public GameObject trail;
     bool startZero = true;
+    public AudioSource resummonSound;
     // public straightArmAttach grabby;
     // Start is called before the first frame update
     void Start()
@@ -57,10 +58,14 @@ public class Spear : MonoBehaviour
         float currTime = 0f;
         float lerpVal;
         WaitForEndOfFrame wfeof = new WaitForEndOfFrame();
+        bool played = false;
         while (currTime < ReadySpearAnimTime) {
             currTime += Time.deltaTime;
             lerpVal = ReadySpearAnimCurve.Evaluate(Mathf.InverseLerp(0f, ReadySpearAnimTime, currTime));
-            // if (lerpVal > .5f) grabby.grabbing = true; 
+            if (lerpVal > 1f && !played) {
+                resummonSound.Play();
+                played = true;
+            }
             transform.localScale = fullSpearScale * lerpVal;
             yield return wfeof;
         }

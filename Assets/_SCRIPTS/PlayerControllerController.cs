@@ -220,4 +220,14 @@ public class PlayerControllerController : MonoBehaviour
         healthbar.FadeToMax(); // return to max health
         PlayerControllerController.invincible = false;
     }
+
+    public void ShutDown() {
+        orbitController.enabled = false;
+        freeRoamController.enabled = false;
+        diveController.enabled = false;
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        looker.planet = null;
+        looker.transform.localRotation = Quaternion.identity;
+        this.enabled = false;
+    }
 }

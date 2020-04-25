@@ -34,7 +34,7 @@ Material:
     - _PerspectiveFilter: 0.875
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 1
-    - _ScaleRatioC: 0.64942276
+    - _ScaleRatioC: 0.3130351
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -46,7 +46,7 @@ Material:
     - _StencilWriteMask: 255
     - _TextureHeight: 1024
     - _TextureWidth: 1024
-    - _UnderlayDilate: -0.21
+    - _UnderlayDilate: 1
     - _UnderlayOffsetX: 0.21
     - _UnderlayOffsetY: -0.59
     - _UnderlaySoftness: 0.746
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: LiberationSans SDF
+  m_Name: LiberationSans SDF 1
   m_EditorClassIdentifier: 
   hashCode: 231247347
   material: {fileID: 2180264}

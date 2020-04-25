@@ -26,6 +26,6 @@ public class straightArmAttach : MonoBehaviour
         lerpVal = Mathf.SmoothDamp(lerpVal, grabbing ? 1f : 0f, ref grabSmoothVel, .13f, 6f);
         currentTarget = Vector3.Lerp(iHandPos.position, grabTarget.position, lerpVal);
         shoulder.rotation = Quaternion.LookRotation(currentTarget - shoulder.position) * iShoulderRelative;
-        hand.position = currentTarget;     
+        hand.position = currentTarget;
     }
 }

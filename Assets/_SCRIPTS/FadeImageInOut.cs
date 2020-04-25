@@ -41,6 +41,7 @@ public class FadeImageInOut : MonoBehaviour
             while (currTime < time) {
                 currTime += Time.deltaTime;
                 float lerpVal = curve.Evaluate(Mathf.InverseLerp(0f, time, currTime));
+            // Debug.Log("Fading to Max");
                 //r.material.SetFloat(propertyName, Mathf.Lerp(varRange.x, varRange.y, lerpVal));
                 r.color = Color.LerpUnclamped(icolor, Max, lerpVal);
                 yield return new WaitForEndOfFrame();

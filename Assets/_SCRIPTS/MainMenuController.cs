@@ -7,6 +7,7 @@ public class MainMenuController : MonoBehaviour
 {
     [Header("UI Elements")]
     public Button startButton;
+    public Button controlsButton;
     public Button quitButton;
     public GameObject UIGroup;
 
@@ -39,6 +40,7 @@ public class MainMenuController : MonoBehaviour
     {
         cursorLock.enabled = true;
         startButton.gameObject.SetActive(false);
+        controlsButton.gameObject.SetActive(false);
         quitButton.gameObject.SetActive(false);
         StartCoroutine(StartGameSequence());
         // Start opening sequence here

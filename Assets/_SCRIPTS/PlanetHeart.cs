@@ -9,6 +9,7 @@ public class PlanetHeart : MonoBehaviour
     public Planet planetParent;
     public Transform planetEaterTarget;
     public Animator planetEaterAnimator;
+    public AudioSource gulpAudio;
     private float CloseMouthDelayAmount = 0.8f;
     public void FeedToPlanetEater()
     {
@@ -37,11 +38,12 @@ public class PlanetHeart : MonoBehaviour
         {
             currTime += Time.deltaTime;
             lerpVal = feedToPECurve.Evaluate(Mathf.InverseLerp(0f, feedToPETime, currTime));
-            transform.position = Vector3.LerpUnclamped(iPos, planetEaterTarget.position, lerpVal * .95f);
+            transform.position = Vector3.LerpUnclamped(iPos, planetEaterTarget.position, lerpVal * .989f);
             peater.rotation = Quaternion.Lerp(irot, Quaternion.LookRotation((transform.position - peater.position).normalized, Vector3.up), lerpVal);
             if(lerpVal > 0.5f && mouthAnimationPlayed == false){
                 planetEaterAnimator.SetBool("OpenMouth", false);
                 mouthAnimationPlayed = true;
+                gulpAudio.PlayDelayed(2f);
             }
             yield return wfeof;
         }

@@ -16,6 +16,7 @@ public class LookAtPlanet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (planet == null) return;
         // transform.LookAt(planet, Vector3.up);
         Quaternion lookRot = Quaternion.LookRotation(planet.position-transform.position, Vector3.up);
         transform.rotation = slow ? Quaternion.Slerp(transform.rotation, lookRot, slowCatchUpPerSec*Time.deltaTime) : lookRot;
