@@ -3052,7 +3052,7 @@ GameObject:
   - component: {fileID: 326130512}
   - component: {fileID: 326130511}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: VFXCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5972,7 +5972,7 @@ GameObject:
   - component: {fileID: 646472148}
   - component: {fileID: 646472147}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CaptionsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
