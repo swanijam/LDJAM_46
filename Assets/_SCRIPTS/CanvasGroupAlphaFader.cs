@@ -5,7 +5,7 @@ using UnityEngine;
 public class CanvasGroupAlphaFader : MonoBehaviour
 {
     public CanvasGroup _canvasGroup;
-            CanvasGroup canvasGroup {
+            public CanvasGroup canvasGroup {
                 get {
                     if (_canvasGroup == null) {
                         _canvasGroup = GetComponent<CanvasGroup>();
@@ -20,19 +20,6 @@ public class CanvasGroupAlphaFader : MonoBehaviour
         public Vector2 varRange = Vector2.up; 
         public float time = 1f;
         public AnimationCurve curve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
-
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Escape)) {
-                if (canvasGroup.alpha > .5f) {
-                    FadeToMin();
-                    Time.timeScale = 1f;
-                } else {
-                    FadeToMax();
-                    Time.timeScale = 0f;
-                }
-            }
-        }
     
         public void FadeToMax () {
             StartCoroutine(_FadeToMax(canvasGroup));
@@ -43,6 +30,7 @@ public class CanvasGroupAlphaFader : MonoBehaviour
     
         private IEnumerator _FadeToMax(CanvasGroup r) {
             float currTime = 0f;
+            // Debug.Log("FadeToMax");
             while (currTime < time) {
                 currTime += Time.unscaledDeltaTime;
                 float lerpVal = curve.Evaluate(Mathf.InverseLerp(0f, time, currTime));
@@ -53,13 +41,16 @@ public class CanvasGroupAlphaFader : MonoBehaviour
         }
     
         public void FadeToMin () {
+            // Debug.Log("call FadeToMin");
             StartCoroutine(_FadeToMin(canvasGroup));
         }
         public void FadeCanvasGroupToMin (CanvasGroup _r) {
+            // Debug.Log("call FadeToMin");
             StartCoroutine(_FadeToMin(_r));
         }
         private IEnumerator _FadeToMin(CanvasGroup r) {
             float currTime = 0f;
+            // Debug.Log("FadeToMin");
             while (currTime < time) {
                 currTime += Time.unscaledDeltaTime;
                 float lerpVal = curve.Evaluate(Mathf.InverseLerp(0f, time, currTime));

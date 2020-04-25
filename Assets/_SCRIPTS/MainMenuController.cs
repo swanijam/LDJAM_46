@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class MainMenuController : MonoBehaviour
     public Button startButton;
     public Button controlsButton;
     public Button quitButton;
+    public Button controlsScreenMenuButton;
     public GameObject UIGroup;
 
     [Header("Planet Eater Animation")]
@@ -33,7 +35,9 @@ public class MainMenuController : MonoBehaviour
     {
         UIGroup.SetActive(true);
         startButton.onClick.AddListener(StartGame);
-        startButton.onClick.AddListener(QuitGame);
+        // controlsButton   // no listener for the controlsButton because Jim already did it with the inspector events
+        quitButton.onClick.AddListener(QuitGame);
+        controlsScreenMenuButton.onClick.AddListener(Reload);
     }
 
     public void StartGame()
@@ -68,7 +72,15 @@ public class MainMenuController : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 
+    public void Reload() {
+        Time.timeScale = 1f;
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+    }
 }
