@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -36,6 +37,8 @@ public class MainMenuController : MonoBehaviour
         UIGroup.SetActive(true);
         startButton.onClick.AddListener(StartGame);
         quitButton.onClick.AddListener(QuitGame);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void StartGame()
@@ -72,7 +75,16 @@ public class MainMenuController : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        Debug.Log("Quitting");
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 
+    public void Reload() {
+        Time.timeScale = 1f;
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+    }
 }

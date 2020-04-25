@@ -33,12 +33,11 @@ public class CanvasGroupAlphaFader : MonoBehaviour
         }
     
         public void FadeToMax () {
+            Time.timeScale = 0f;
             StartCoroutine(_FadeToMax(canvasGroup));
-            Time.timeScale = 1f;
         }
         public void FadeCanvasGroupToMax (CanvasGroup _r) {
             StartCoroutine(_FadeToMax(_r));
-            Time.timeScale = 0f;
         }
     
         private IEnumerator _FadeToMax(CanvasGroup r) {
@@ -60,6 +59,7 @@ public class CanvasGroupAlphaFader : MonoBehaviour
         }
     
         public void FadeToMin () {
+            Time.timeScale = 1f;
             StartCoroutine(_FadeToMin(canvasGroup));
         }
         public void FadeCanvasGroupToMin (CanvasGroup _r) {
