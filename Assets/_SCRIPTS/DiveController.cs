@@ -58,7 +58,8 @@ public class DiveController : MonoBehaviour
 
     void Update()
     {
-        if (!fullCharge && Input.GetMouseButton(0)) {
+        // if (!fullCharge && Input.GetMouseButton(0)) {
+        if (!fullCharge && true) {
             if (!DiveAir.isPlaying) DiveAir.Play();
             rb.velocity += camera.TransformDirection(GetInputTranslationDirection()) * accelPerSec;
             rb.velocity = rb.velocity.normalized * Mathf.Min(maxSpeed, rb.velocity.magnitude);

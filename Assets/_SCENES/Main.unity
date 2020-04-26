@@ -4236,7 +4236,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 268042304}
   m_Follow: {fileID: 745782370}
   m_Lens:
-    FieldOfView: 40
+    FieldOfView: 8.27313
     OrthographicSize: 5
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -22977,7 +22977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: -1.148227, z: -2.218742}
+  m_FollowOffset: {x: 0, y: -1.31, z: -1.67}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -24792,7 +24792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: -1.148227, z: -2.218742}
+  m_FollowOffset: {x: 0, y: -1.31, z: -1.67}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -40974,8 +40974,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_NoiseProfile: {fileID: 11400000, guid: 20a705aea2d80e0478fb89b6f43d8530, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 0
-  m_FrequencyGain: 0
+  m_AmplitudeGain: 0.6729942
+  m_FrequencyGain: 19.2284
   mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1742912364
 GameObject:
@@ -44945,7 +44945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: -1.148227, z: -2.218742}
+  m_FollowOffset: {x: 0, y: -1.31, z: -1.67}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
