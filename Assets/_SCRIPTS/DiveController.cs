@@ -60,7 +60,7 @@ public class DiveController : MonoBehaviour
     {
         // if (!fullCharge && Input.GetMouseButton(0)) {
         if (!fullCharge && true) {
-            if (!DiveAir.isPlaying) DiveAir.Play();
+            // if (!DiveAir.isPlaying) DiveAir.Play();
             rb.velocity += camera.TransformDirection(GetInputTranslationDirection()) * accelPerSec;
             rb.velocity = rb.velocity.normalized * Mathf.Min(maxSpeed, rb.velocity.magnitude);
             descentVelocity = dvelocity;
@@ -105,7 +105,7 @@ public class DiveController : MonoBehaviour
         // cover screen with black
         looker.enabled = false;
         activateBlack.Invoke();
-        DiveAir.Stop();
+        // DiveAir.Stop();
         ambientOrbit.GetComponent<FadeVolume>().SetToMin();
         ambientSpace.Pause();
         yield return new WaitForSeconds(blackTime);

@@ -16,7 +16,11 @@ public class ChatSequence : MonoBehaviour
     public Phrase[] phrases;
     public Animator talkingAnimator;
     public Transform talkerLookat;
+    public AudioClip[] syllables;
+    public AudioSource speakerAudio;
+    public int factor = 1; int count = 0;
     IEnumerator SpeakPhrases() {
+        count = 0;
         Quaternion iRot = talkingAnimator.transform.rotation;
         if (talkerLookat != null) {
             yield return new WaitForSeconds(2f);
@@ -43,6 +47,10 @@ public class ChatSequence : MonoBehaviour
             Debug.Log(charlength +", "+ phrases[i].text);
             if (talkingAnimator != null) talkingAnimator.SetBool("Talking", true);
             for (int j = 1; j <= charlength; j++) {
+                count = (count + 1) % factor;
+                if (count == 0 && speakerAudio != null) {
+                    speakerAudio.PlayOneShot(syllables[Random.Range(0, syllables.Length)]);
+                }
                 yield return new WaitForSeconds(1f/charsPerSecond);
                 text1.maxVisibleCharacters = j;
                 text2.maxVisibleCharacters = j;
