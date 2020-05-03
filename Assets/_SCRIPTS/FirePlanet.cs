@@ -14,7 +14,7 @@ public class FirePlanet : MonoBehaviour
 
     void OnEnable()
     {
-        planet.enterPlanet += BreathFirePeriodically;
+        planet.onEnterPlanet += BreathFirePeriodically;
         planet.onHurtPlanet += HurtGesture;
     }
 

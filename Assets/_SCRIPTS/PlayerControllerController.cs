@@ -37,6 +37,8 @@ public class PlayerControllerController : MonoBehaviour
     public CinemachineVirtualCamera diveCamBridge;
     public CinemachineVirtualCamera diveCam;
     public FreeRoamController freeRoamController;
+    public SatelliteModeController satelliteModeController;
+    public CinemachineVirtualCamera satelliteModeCamera;
     public CinemachineFreeLook freeCam;
     public CinemachineVirtualCamera freeIntermediateCam;
     public CinemachineVirtualCamera farCam;
@@ -230,5 +232,20 @@ public class PlayerControllerController : MonoBehaviour
         looker.planet = null;
         looker.transform.localRotation = Quaternion.identity;
         this.enabled = false;
+    }
+
+    public void BeginSatelliteMode(Planet p) {
+        orbitController.enabled = false;
+        freeRoamController.enabled = false;
+        diveController.enabled = false;
+        satelliteModeController.m_Planet = p;
+        satelliteModeController.camera = satelliteModeCamera;
+        // satelliteModeCamera.m_LookAt = p.transform;
+        satelliteModeController.enabled = true;
+        // satelliteModeCamera.gameObject.SetActive(true);
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        looker.planet = p.transform;
+        // looker.transform.localRotation = Quaternion.identity;
+        // this.enabled = false;
     }
 }

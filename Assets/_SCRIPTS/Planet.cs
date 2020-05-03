@@ -147,18 +147,24 @@ public class Planet : MonoBehaviour
     public event HealthReducedToZero onHealthZero;
 
     public delegate void EnterPlanet();
-    public event EnterPlanet enterPlanet;
+    // renamed this to "onEnterPlanet" from enterPlanet because that's confusin - Jimmy
+    public event EnterPlanet onEnterPlanet;
 
     public LayerMask playerLayer;
     public Transform player;
+    public bool d_satelliteMode = false;
     private void OnTriggerEnter(Collider other)
     {
         if (playerLayer == (playerLayer | (1 << other.gameObject.layer))) {
-            if (enterPlanet != null) enterPlanet();
+            if (onEnterPlanet != null) onEnterPlanet();
             PlayerControllerController pcc = other.gameObject.GetComponent<PlayerControllerController>();
             player = pcc.transform;
             if (pcc == null) Debug.LogError("not a player", other.gameObject);
-            pcc.BeginOrbitCombat(this);
+            if (d_satelliteMode) {
+                pcc.BeginSatelliteMode(this);
+            } else {
+                pcc.BeginOrbitCombat(this);
+            }
         }
     }
     
